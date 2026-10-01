@@ -17,7 +17,7 @@ public issues or discussions.
 
 | Property | What it means |
 |---|---|
-| Explicit execution | No path executes AI output without a human confirmation step. The chat cannot execute. |
+| Explicit execution | No AI-proposed command runs without a human confirmation step; the chat cannot execute. Factory-generated project content is written by validated generators, not by executing AI-written commands. |
 | Veto is final | A vetoed version of a command can never be executed. |
 | Isolated execution | Approved commands run in a disposable environment with no network, a read-only system, no privileges and only their own project mounted. |
 | Refuse when unsure | Commands whose effect cannot be analyzed safely are refused before running. |

@@ -6,11 +6,11 @@
 
 🇧🇷 **Português** · 🇺🇸 [English](README.md)
 
-[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/technical-overview.pt-BR.md) · [Segurança](docs/security-model.pt-BR.md) · [Maturidade](#maturidade-atual) · [Roadmap](docs/roadmap.pt-BR.md) · [Perguntas](docs/faq.pt-BR.md) · [Feedback](#feedback)
+[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/technical-overview.pt-BR.md) · [Segurança](docs/security-model.pt-BR.md) · [Maturidade](#maturidade-atual) · [Roadmap](docs/roadmap.pt-BR.md) · [Perguntas](docs/faq.pt-BR.md) · [Avalie em 10 minutos](docs/evaluation-guide.pt-BR.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **A camada de engenharia em volta da IA: os agentes propõem, as pessoas decidem, o sistema guarda a evidência.**
 
-Um cockpit instalado na sua infraestrutura, onde agentes de IA especializados planejam e constroem software, toda mudança espera
+Um cockpit instalado na sua infraestrutura, onde agentes de IA especializados planejam e constroem software, todo comando que eles propõem espera
 aprovação humana, roda isolada e pode ser rastreada, medida e desfeita.
 
 ---
@@ -27,12 +27,14 @@ observável, reversível e economicamente controlável** — na infraestrutura q
 melhores modelos ou agentes de código — organiza, governa, isola, mede e registra o trabalho deles, para que os modelos possam mudar sem que
 a governança mude junto.
 
+**O que ele não é:** um novo modelo de linguagem, um substituto dos modelos ou agentes de código que usa, um sandbox para código não
+confiável de terceiros, uma plataforma de hospedagem multi-tenant, nem — hoje — um projeto open source.
+
 ## Construído da fronteira de execução para dentro
 
 O OrquestrAI não começou pelas funcionalidades. Começou pela pergunta *o que acontece quando o que a IA produz toca um sistema real* — e
 a respondeu primeiro: confirmação humana, execução isolada, mudanças medidas e reversíveis, registros à prova de adulteração, contabilidade
-de custo, backup cifrado e procedimentos de recuperação, e comportamento fail-closed nos pontos críticos. Uma capacidade só conta depois
-que um teste automático e um operador humano a provaram. As funcionalidades são construídas em cima dessa fundação, não ao lado dela.
+de custo, backup cifrado e procedimentos de recuperação, e comportamento fail-closed nos pontos críticos. Uma capacidade só recebe o selo *Disponível* depois que testes automáticos e um operador humano numa instalação real a provaram. As funcionalidades são construídas em cima dessa fundação, não ao lado dela.
 
 ## O princípio
 
@@ -44,14 +46,14 @@ que um teste automático e um operador humano a provaram. As funcionalidades sã
 
 | | |
 |---|---|
-| **Aprovação humana no ponto crítico** | O chat nunca executa. Toda mudança concreta vira um bloco de comando revisável, que só roda depois da confirmação de uma pessoa. |
+| **Aprovação humana no ponto crítico** | Comandos propostos pela IA nunca rodam sozinhos: cada um vira um bloco de comando revisável, que só roda depois da confirmação de uma pessoa. Conteúdo gerado para o projeto (páginas, código da aplicação) é escrito por geradores validados, não pela execução de comandos escritos pela IA. |
 | **Explicar antes de aprovar** | Qualquer mudança proposta pode ser explicada em linguagem simples — intenção, etapas, impacto, risco — sem rodar nada. |
 | **Execução isolada** | O comando aprovado roda num ambiente descartável, sem rede e sem privilégios, que enxerga só o próprio projeto. |
 | **Operações reversíveis** | O sistema registra o que a mudança pode tocar e mede o que ela de fato mudou; desfazer mostra antes o que será revertido. |
 | **Evidência por padrão** | Execuções ficam num registro à prova de adulteração; sessões de terminal são seladas. Dá para ver quem propôs, quem aprovou e o que rodou. |
 | **Chat, comando e terminal são coisas diferentes** | Conversa, mudança e inspeção são superfícies separadas, com permissões separadas. O terminal do projeto é somente leitura. |
 | **Agentes especializados** | Um planejador monta, a cada tarefa, um time de agentes — estratégia, arquitetura, código, revisão, testes, documentação. |
-| **Custo visível** | Cada chamada a modelo é atribuída a projeto, agente e superfície. Preço desconhecido continua desconhecido, não vira zero. |
+| **Custo visível** | As chamadas a modelo são registradas por agente e superfície, e atribuídas ao projeto a que pertencem. Preço desconhecido continua desconhecido, não vira zero. |
 | **Vários provedores** | Os agentes podem usar provedores diferentes; você usa as suas próprias contas e chaves. |
 | **Conhecimento governado** | O sistema propõe lições a partir do próprio trabalho; elas só chegam aos agentes depois que uma pessoa aprova. |
 | **Instalação própria** | Uma instalação dedicada por organização, em infraestrutura que ela controla. |
@@ -116,7 +118,9 @@ um provedor de IA em nuvem é usado, o conteúdo enviado a ele segue os termos d
 | Instalador guiado (um comando + assistente) | Planejado |
 | Outras stacks e bancos | Planejado |
 
-"Disponível" significa provado por testes automáticos e por um operador humano numa instalação real.
+**Disponível** — provado por testes automáticos e por um operador humano numa instalação real. **Em validação** — construído e testado,
+passando por prova e revisão independente antes da promoção; não liberado para operadores. **Configurável** — pode ser configurado e
+testado, sem o nível de validação dos caminhos principais. **Planejado** — ainda não é funcionalidade.
 
 ## Para quem
 
@@ -125,15 +129,20 @@ rode sob a própria governança.
 
 ## Por que importa para uma empresa
 
-Aprovação humana exatamente onde a mudança fica real · saber quem propôs, quem aprovou e o que rodou · desfazer mudanças suportadas em vez
+Aprovação humana exatamente onde a mudança fica real · saber quem propôs, quem aprovou e o que rodou em cada comando executado · desfazer mudanças suportadas em vez
 de consertar à mão · ver o custo da IA por projeto e por agente, e distribuir o trabalho entre provedores · rodar na infraestrutura
 escolhida, com as próprias contas · transformar um conjunto de ferramentas de IA num time com processo.
 
 ## Feedback
 
-Construímos o OrquestrAI de forma aberta o bastante para aprender, mantendo privada a engenharia de produção. Queremos críticas rigorosas — arquitetura, segurança, governança, experiência de uso, experiência
-de desenvolvimento, casos de negócio e o que está faltando. Discussões e issues abrem junto com este repositório. Questões de segurança:
-não abra issue pública; um canal privado será indicado aqui.
+Preferimos saber onde o OrquestrAI está errado a colecionar estrelas.
+
+- **Discorda de alguma premissa da arquitetura?** [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2).
+- **Falta um caso de uso?** Abra uma ideia ou sugestão.
+- **Algo confuso?** Envie feedback de UX ou um problema de documentação.
+- **Achou uma falha de segurança?** Relate em privado — nunca em issues ou discussões públicas.
+
+Como participar: [CONTRIBUTING](CONTRIBUTING.pt-BR.md) · [avalie a ideia em 10 minutos](docs/evaluation-guide.pt-BR.md).
 
 ## Sobre
 

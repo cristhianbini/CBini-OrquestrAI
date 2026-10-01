@@ -16,7 +16,7 @@ governança mude junto. Esta é a aposta de arquitetura do produto; não é apre
 ## Dois planos
 
 - **Plano de controle** — onde pessoas e agentes trabalham: conversas, planos, propostas, aprovações, custo, conhecimento, evidência.
-  Ele nunca executa sozinho o que a IA produz.
+  Ele nunca roda sozinho comandos escritos pela IA; conteúdo gerado para o projeto é escrito por geradores validados.
 - **Plano de execução** — onde a mudança acontece: ambientes curtos e restritos, que enxergam um projeto por vez.
 
 O diagrama está na [versão em inglês](technical-overview.md#two-planes).
@@ -25,7 +25,7 @@ O diagrama está na [versão em inglês](technical-overview.md#two-planes).
 
 | Etapa | O que acontece | Fronteira |
 |---|---|---|
-| 1. Intenção | O operador descreve a mudança no chat do projeto. | Toda conversa pertence a exatamente um projeto. |
+| 1. Intenção | O operador descreve a mudança no chat do projeto. | Conversas pertencem a um projeto (as antigas, anteriores ao isolamento, ficam somente leitura). |
 | 2. Planejamento | Um planejador escolhe quais agentes especializados rodam; a saída e o custo de cada um ficam registrados. | Agentes produzem texto, nunca efeitos. |
 | 3. Proposta | O que mudaria um sistema vira um bloco de comando com intenção declarada. | O chat não executa. |
 | 4. Entendimento | Sob pedido, o bloco é explicado em linguagem simples: intenção, etapas, impacto, risco. | Explicar não executa nada. |

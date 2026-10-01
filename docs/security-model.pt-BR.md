@@ -17,7 +17,7 @@ em issues ou discussões públicas.
 
 | Propriedade | O que significa |
 |---|---|
-| Execução explícita | Nenhum caminho executa saída de IA sem uma etapa de confirmação humana. O chat não executa. |
+| Execução explícita | Nenhum comando proposto pela IA roda sem uma etapa de confirmação humana; conteúdo gerado pela fábrica é escrito por geradores validados, não pela execução de comandos escritos pela IA. O chat não executa. |
 | Veto é definitivo | Uma versão vetada de um comando nunca pode ser executada. |
 | Execução isolada | Comandos aprovados rodam num ambiente descartável, sem rede, sistema somente leitura, sem privilégios e só com o próprio projeto montado. |
 | Na dúvida, recusa | Comandos cujo efeito não pode ser analisado com segurança são recusados antes de rodar. |

@@ -42,14 +42,14 @@ flowchart LR
 ```
 
 - **Control plane** — where people and agents work: conversations, plans, proposals, approvals, cost, knowledge, evidence.
-  It never executes AI output by itself.
+  It never runs AI-written commands by itself; generated project content is written through validated generators.
 - **Execution plane** — where changes happen: short-lived, constrained environments that see one project at a time.
 
 ## The life of a change
 
 | Step | What happens | Boundary |
 |---|---|---|
-| 1. Intent | The operator describes a change in the project's chat. | Every conversation belongs to exactly one project. |
+| 1. Intent | The operator describes a change in the project's chat. | Conversations are scoped to one project (older, pre-isolation conversations are read-only). |
 | 2. Planning | A planner chooses which specialized agents run; each output and its cost are recorded. | Agents produce text, never side effects. |
 | 3. Proposal | Anything that would change a system becomes a command block with a declared intent. | The chat cannot execute. |
 | 4. Understanding | On request, the block is explained in plain language: intent, steps, impact, risk. | Explaining runs nothing. |
@@ -78,7 +78,7 @@ browser.
 
 ## Cost
 
-Every model call is recorded with project, agent, surface, tokens and latency. Prices are applied only from known price data; a call
+Model calls are recorded with agent, surface, tokens and latency, and attributed to their project. Prices are applied only from known price data; a call
 without a known price is shown as *unknown*, never as zero. Cost is visible per project, per agent and per call.
 
 ## Knowledge
