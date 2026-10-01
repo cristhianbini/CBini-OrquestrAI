@@ -6,6 +6,8 @@
 
 🇺🇸 **English** · 🇧🇷 [Português](README.pt-BR.md)
 
+[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/technical-overview.md) · [Security](docs/security-model.md) · [Maturity](#current-maturity) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Feedback](#feedback)
+
 **The engineering layer around AI: agents propose, people decide, the system keeps the evidence.**
 
 A self-hosted cockpit where specialized AI agents plan and build software, every change waits for human approval,
@@ -20,6 +22,10 @@ allowed to run, keep one project from touching another, prove what changed, undo
 
 OrquestrAI is built for that part. It does not try to make the model smarter. It makes AI engineering **governed, observable,
 reversible and economically controllable** — on infrastructure you choose.
+
+**AI agents are engines. OrquestrAI is the engineering layer that decides how their work becomes real.** It does not replace the best
+models or coding agents — it organizes, governs, isolates, measures and records their work, so models can change without the governance
+changing with them.
 
 ## Built from the execution boundary inward
 
@@ -81,6 +87,8 @@ Describe a project in a few sentences; the factory plans it, builds it and opens
 
 ## Architecture
 
+High-level view below; boundaries and the life of a change are in the [technical overview](docs/technical-overview.md).
+
 ```mermaid
 flowchart TB
     op([Operator]) --> ck[Cockpit]
@@ -97,9 +105,17 @@ flowchart TB
     ck --> bk[(Encrypted backup & recovery)]
 ```
 
+## Engineering evidence
+
+A capability is not counted because the code exists. It is counted when the path has been proven:
+**design → automated proof → human proof on a live system → independent review when sensitive → promotion.**
+Passing the happy path is not enough: the first full-stack generator passed its functional tests, an independent review found failure cases,
+and it was held back. Details: [technical overview](docs/technical-overview.md#engineering-evidence).
+
 ## Security by design
 
-Design properties, not guarantees:
+Full model — proven properties, work in validation, assumptions, limits and non-goals: [docs/security-model.md](docs/security-model.md).
+In short — design properties, not guarantees:
 
 - **Least privilege** — execution without network, privileges or access outside the project.
 - **Explicit execution** — no path runs AI output without human confirmation; administrative access is separate and requires a second factor.
@@ -175,4 +191,4 @@ Security concerns: please do not open public issues; a private reporting channel
 This repository is the public documentation and showcase for CBini OrquestrAI. The product source code is not published here and
 this is not an open-source project. Licensing and commercial terms are under preparation. All rights reserved.
 
-More: [public roadmap](docs/roadmap.md) · [FAQ](docs/faq.md)
+More: [technical overview](docs/technical-overview.md) · [security model](docs/security-model.md) · [public roadmap](docs/roadmap.md) · [FAQ](docs/faq.md)
