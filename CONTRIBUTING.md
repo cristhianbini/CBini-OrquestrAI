@@ -11,6 +11,6 @@ clone or pull requests to send. What helps most today is critique.
 | Ask a question | Discussions (Q&A) |
 | Suggest a capability or use case | *Feature suggestion* issue |
 | Report something confusing in the product or the docs | *UX feedback* or *Documentation issue* |
-| Report a security problem | **Privately — never in issues or discussions.** A private channel will be listed here once enabled. |
+| Report a security problem | **Privately — never in issues or discussions.** See [SECURITY.md](SECURITY.md). |
 
 Please do not post credentials, customer data or real system details in issues or discussions.

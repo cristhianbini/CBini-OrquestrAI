@@ -140,7 +140,7 @@ Preferimos saber onde o OrquestrAI está errado a colecionar estrelas.
 - **Discorda de alguma premissa da arquitetura?** [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2).
 - **Falta um caso de uso?** Abra uma ideia ou sugestão.
 - **Algo confuso?** Envie feedback de UX ou um problema de documentação.
-- **Achou uma falha de segurança?** Relate em privado — nunca em issues ou discussões públicas.
+- **Achou uma falha de segurança?** Relate em privado — veja o [SECURITY.md](SECURITY.md).
 
 Como participar: [CONTRIBUTING](CONTRIBUTING.pt-BR.md) · [avalie a ideia em 10 minutos](docs/evaluation-guide.pt-BR.md).
 

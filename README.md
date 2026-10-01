@@ -189,7 +189,7 @@ We would rather hear where OrquestrAI is wrong than collect stars.
 - **Disagree with an architectural assumption?** [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2).
 - **Missing a use case?** Open an idea or a feature suggestion.
 - **Something confusing?** Send UX feedback or a documentation issue.
-- **Found a security issue?** Report it privately — never in public issues or discussions.
+- **Found a security issue?** Report it privately — see [SECURITY.md](SECURITY.md).
 
 How to take part: [CONTRIBUTING](CONTRIBUTING.md) · [evaluate the idea in 10 minutes](docs/evaluation-guide.md).
 

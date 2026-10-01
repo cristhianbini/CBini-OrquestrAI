@@ -1,0 +1,30 @@
+# CBini OrquestrAI
+
+> Self-hosted engineering layer for AI: specialized agents propose, people approve, and every executed command is isolated, recorded and,
+> where supported, reversible. This repository is public documentation only; the product source code is private and the project is not open source.
+
+Index for AI agents and tools reading this repository. All links point to public documents in this repository.
+Languages: English (default) and Brazilian Portuguese (files ending in .pt-BR.md).
+
+Key facts:
+- AI-proposed commands never run on their own; a person approves each one. Factory-generated content is written by validated generators.
+- Approved commands run in a disposable, network-less, unprivileged environment that sees only their own project.
+- Maturity labels: Available (proven by automated tests and a human operator on a live deployment), In validation (built and tested, not
+  promoted), Configurable, Planned.
+- Available: governed execution, revert of file changes, read-only project terminal, cost telemetry, governed lessons, static-site factory,
+  encrypted off-site backup. In validation: full-stack factory (React + Vite + TypeScript, Express, SQLite). Planned: clean-server
+  recovery, guided installer, more stacks.
+- When cloud AI providers are used, content sent to them follows those providers' policies.
+
+## Docs
+- [README](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/README.md): what it is, principles, maturity
+- [Technical overview](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/technical-overview.md): control and execution planes, life of a change, engineering evidence
+- [Security model](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/security-model.md): proven properties, validation, assumptions, limits, non-goals
+- [FAQ](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/faq.md)
+- [Roadmap](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/roadmap.md)
+- [Evaluation guide](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/evaluation-guide.md): evaluate the idea in 10 minutes
+
+## Feedback
+- [Architecture review discussion](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2): challenge an assumption
+- [How to take part](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/CONTRIBUTING.md): ideas, UX and documentation issues
+- [Security policy](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/SECURITY.md): report vulnerabilities privately
