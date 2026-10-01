@@ -9,7 +9,7 @@ Não. Este repositório é a vitrine e a documentação pública. O código-font
 Não. Ele contém só documentação pública. O produto é desenvolvido num repositório privado.
 
 **O que está disponível hoje e o que está em validação?**
-Veja a tabela de maturidade no [README](../README.pt-BR.md#maturidade-atual). *Disponível* significa provado por testes automáticos e por
+Veja a tabela de maturidade no [README](../README-BR.md#maturidade-atual). *Disponível* significa provado por testes automáticos e por
 um operador humano numa instalação real; *em validação* significa construído e testado, mas ainda não promovido.
 
 **A IA executa mudanças sozinha?**
@@ -37,4 +37,4 @@ Hoje a instalação segue um procedimento manual documentado. Um instalador guia
 **Como dou feedback?**
 Pelas Discussions e Issues deste repositório. Não relate questões de segurança publicamente.
 
-[← Voltar ao README](../README.pt-BR.md)
+[← Voltar ao README](../README-BR.md)

@@ -1,6 +1,6 @@
 # Visão técnica — CBini OrquestrAI
 
-🇧🇷 **Português** · 🇺🇸 [English](technical-overview.md) · [README](../README.pt-BR.md) · [Modelo de segurança](security-model.pt-BR.md)
+🇧🇷 **Português** · 🇺🇸 [English](arch.md) · [README](../README-BR.md) · [Modelo de segurança](security-br.md)
 
 Esta página explica como o OrquestrAI se organiza e onde ficam as suas fronteiras. Descreve a arquitetura do produto, não a implementação;
 o código-fonte é privado.
@@ -19,7 +19,7 @@ governança mude junto. Esta é a aposta de arquitetura do produto; não é apre
   Ele nunca roda sozinho comandos escritos pela IA; conteúdo gerado para o projeto é escrito por geradores validados.
 - **Plano de execução** — onde a mudança acontece: ambientes curtos e restritos, que enxergam um projeto por vez.
 
-O diagrama está na [versão em inglês](technical-overview.md#two-planes).
+O diagrama está na [versão em inglês](arch.md#two-planes).
 
 ## A vida de uma mudança
 

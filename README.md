@@ -4,9 +4,9 @@
 
 🇧🇷 Built in Brazil by CBini Soluções em TI
 
-🇺🇸 **English** · 🇧🇷 [Português](README.pt-BR.md)
+🇺🇸 **English** · 🇧🇷 [Português](README-BR.md)
 
-[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/technical-overview.md) · [Security](docs/security-model.md) · [Maturity](#current-maturity) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/evaluation-guide.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Maturity](#current-maturity) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **The engineering layer around AI: agents propose, people decide, the system keeps the evidence.**
 
@@ -89,7 +89,7 @@ Describe a project in a few sentences; the factory plans it, builds it and opens
 
 ## Architecture
 
-High-level view below; boundaries and the life of a change are in the [technical overview](docs/technical-overview.md).
+High-level view below; boundaries and the life of a change are in the [technical overview](docs/arch.md).
 
 ```mermaid
 flowchart TB
@@ -112,11 +112,11 @@ flowchart TB
 A capability is not counted because the code exists. It is counted when the path has been proven:
 **design → automated proof → human proof on a live system → independent review when sensitive → promotion.**
 Passing the happy path is not enough: the first full-stack generator passed its functional tests, an independent review found failure cases,
-and it was held back. Details: [technical overview](docs/technical-overview.md#engineering-evidence).
+and it was held back. Details: [technical overview](docs/arch.md#engineering-evidence).
 
 ## Security by design
 
-Full model — proven properties, work in validation, assumptions, limits and non-goals: [docs/security-model.md](docs/security-model.md).
+Full model — proven properties, work in validation, assumptions, limits and non-goals: [docs/security.md](docs/security.md).
 In short — design properties, not guarantees:
 
 - **Least privilege** — execution without network, privileges or access outside the project.
@@ -191,7 +191,7 @@ We would rather hear where OrquestrAI is wrong than collect stars.
 - **Something confusing?** Send UX feedback or a documentation issue.
 - **Found a security issue?** Report it privately — see [SECURITY.md](SECURITY.md).
 
-How to take part: [CONTRIBUTING](CONTRIBUTING.md) · [evaluate the idea in 10 minutes](docs/evaluation-guide.md).
+How to take part: [CONTRIBUTING](CONTRIBUTING.md) · [evaluate the idea in 10 minutes](docs/eval.md).
 
 ## About
 
@@ -200,4 +200,4 @@ How to take part: [CONTRIBUTING](CONTRIBUTING.md) · [evaluate the idea in 10 mi
 This repository is the public documentation and showcase for CBini OrquestrAI. The product source code is not published here and
 this is not an open-source project. Licensing and commercial terms are under preparation. All rights reserved.
 
-More: [technical overview](docs/technical-overview.md) · [security model](docs/security-model.md) · [public roadmap](docs/roadmap.md) · [FAQ](docs/faq.md)
+More: [technical overview](docs/arch.md) · [security model](docs/security.md) · [public roadmap](docs/roadmap.md) · [FAQ](docs/faq.md)

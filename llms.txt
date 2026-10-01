@@ -4,7 +4,7 @@
 > where supported, reversible. This repository is public documentation only; the product source code is private and the project is not open source.
 
 Index for AI agents and tools reading this repository. All links point to public documents in this repository.
-Languages: English (default) and Brazilian Portuguese (files ending in .pt-BR.md).
+Languages: English (default) and Brazilian Portuguese (files ending in -BR.md / -br.md).
 
 Key facts:
 - AI-proposed commands never run on their own; a person approves each one. Factory-generated content is written by validated generators.
@@ -18,11 +18,12 @@ Key facts:
 
 ## Docs
 - [README](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/README.md): what it is, principles, maturity
-- [Technical overview](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/technical-overview.md): control and execution planes, life of a change, engineering evidence
-- [Security model](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/security-model.md): proven properties, validation, assumptions, limits, non-goals
+- [Technical overview](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/arch.md): control and execution planes, life of a change, engineering evidence
+- [Design decisions](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/design.md): why each boundary exists and the trade-off it accepts
+- [Security model](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/security.md): proven properties, validation, assumptions, limits, non-goals
 - [FAQ](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/faq.md)
 - [Roadmap](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/roadmap.md)
-- [Evaluation guide](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/evaluation-guide.md): evaluate the idea in 10 minutes
+- [Evaluation guide](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/eval.md): evaluate the idea in 10 minutes
 
 ## Feedback
 - [Architecture review discussion](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2): challenge an assumption

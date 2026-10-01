@@ -1,6 +1,6 @@
 # Security model — CBini OrquestrAI
 
-🇺🇸 **English** · 🇧🇷 [Português](security-model.pt-BR.md) · [README](../README.md) · [Technical overview](technical-overview.md)
+🇺🇸 **English** · 🇧🇷 [Português](security-br.md) · [README](../README.md) · [Technical overview](arch.md)
 
 This page states what OrquestrAI is designed to protect, what is proven, what is still being validated, what it assumes and what it does
 not try to do. It is a public summary; operational details are intentionally omitted. Please report vulnerabilities privately, never in

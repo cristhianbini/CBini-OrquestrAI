@@ -6,7 +6,7 @@
 
 🇧🇷 **Português** · 🇺🇸 [English](README.md)
 
-[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/technical-overview.pt-BR.md) · [Segurança](docs/security-model.pt-BR.md) · [Maturidade](#maturidade-atual) · [Roadmap](docs/roadmap.pt-BR.md) · [Perguntas](docs/faq.pt-BR.md) · [Avalie em 10 minutos](docs/evaluation-guide.pt-BR.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Maturidade](#maturidade-atual) · [Roadmap](docs/roadmap-br.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **A camada de engenharia em volta da IA: os agentes propõem, as pessoas decidem, o sistema guarda a evidência.**
 
@@ -81,11 +81,11 @@ Descreva o projeto em poucas frases; a fábrica planeja, constrói e abre um pre
 Uma capacidade não conta porque o código existe. Conta quando o caminho foi provado:
 **desenho → prova automática → prova humana num sistema real → revisão independente quando sensível → promoção.**
 Passar no caminho feliz não basta: o primeiro gerador full stack passou nos testes funcionais, uma revisão independente achou casos de falha
-e ele foi segurado. Detalhes: [visão técnica](docs/technical-overview.pt-BR.md#evidência-de-engenharia).
+e ele foi segurado. Detalhes: [visão técnica](docs/arch-br.md#evidência-de-engenharia).
 
 ## Segurança por desenho
 
-Modelo completo — propriedades provadas, o que está em validação, pressupostos, limites e não objetivos: [docs/security-model.pt-BR.md](docs/security-model.pt-BR.md).
+Modelo completo — propriedades provadas, o que está em validação, pressupostos, limites e não objetivos: [docs/security-br.md](docs/security-br.md).
 Em resumo — propriedades de desenho, não garantias: menor privilégio · execução explícita (nada roda sem confirmação; acesso administrativo separado,
 com segundo fator) · isolamento (comandos aprovados e terminais do projeto em containers por projeto, sem rede; previews em origem separada; rede isolada por projeto para aplicações contínuas em validação) · reversibilidade onde suportado · trilha de auditoria à
 prova de adulteração · revisão externa independente antes de promover mudanças de execução, isolamento e recuperação · disciplina de
@@ -142,7 +142,7 @@ Preferimos saber onde o OrquestrAI está errado a colecionar estrelas.
 - **Algo confuso?** Envie feedback de UX ou um problema de documentação.
 - **Achou uma falha de segurança?** Relate em privado — veja o [SECURITY.md](SECURITY.md).
 
-Como participar: [CONTRIBUTING](CONTRIBUTING.pt-BR.md) · [avalie a ideia em 10 minutos](docs/evaluation-guide.pt-BR.md).
+Como participar: [CONTRIBUTING](CONTRIBUTING-BR.md) · [avalie a ideia em 10 minutos](docs/eval-br.md).
 
 ## Sobre
 
@@ -151,4 +151,4 @@ Como participar: [CONTRIBUTING](CONTRIBUTING.pt-BR.md) · [avalie a ideia em 10 
 Este repositório é a documentação pública e a vitrine do CBini OrquestrAI. O código-fonte do produto não está publicado aqui e este não
 é um projeto open source. Licenciamento e termos comerciais em preparação. Todos os direitos reservados.
 
-Mais: [visão técnica](docs/technical-overview.pt-BR.md) · [modelo de segurança](docs/security-model.pt-BR.md) · [roadmap público](docs/roadmap.pt-BR.md) · [perguntas frequentes](docs/faq.pt-BR.md)
+Mais: [visão técnica](docs/arch-br.md) · [modelo de segurança](docs/security-br.md) · [roadmap público](docs/roadmap-br.md) · [perguntas frequentes](docs/faq-br.md)

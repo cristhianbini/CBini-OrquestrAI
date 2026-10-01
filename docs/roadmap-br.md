@@ -20,4 +20,4 @@ Só a direção geral. Nenhuma data é prometida; os itens avançam quando são 
 - Governança para equipes maiores.
 - Integrações mais amplas.
 
-[← Voltar ao README](../README.pt-BR.md)
+[← Voltar ao README](../README-BR.md)

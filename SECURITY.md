@@ -15,9 +15,9 @@ We acknowledge reports and keep the reporter informed. We do not publish fixed r
 ## Scope
 
 This repository contains public documentation only; the product source code is private. Reports about the product are welcome through the
-same private channel. The public security model is in [docs/security-model.md](docs/security-model.md).
+same private channel. The public security model is in [docs/security.md](docs/security.md).
 
 ---
 
 **Português:** relate problemas de segurança **em privado**, pela aba **Security** deste repositório → **Report a vulnerability**. Nunca em
-issues ou discussões. Não envie credenciais reais nem dados pessoais. Modelo de segurança: [docs/security-model.pt-BR.md](docs/security-model.pt-BR.md).
+issues ou discussões. Não envie credenciais reais nem dados pessoais. Modelo de segurança: [docs/security-br.md](docs/security-br.md).

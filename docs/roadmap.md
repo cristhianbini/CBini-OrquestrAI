@@ -1,6 +1,6 @@
 # Public roadmap — CBini OrquestrAI
 
-🇺🇸 **English** · 🇧🇷 [Português](roadmap.pt-BR.md)
+🇺🇸 **English** · 🇧🇷 [Português](roadmap-br.md)
 
 High-level direction only. No dates are promised; items move when they are proven, not when they are announced.
 

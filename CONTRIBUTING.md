@@ -1,6 +1,6 @@
 # Taking part — CBini OrquestrAI
 
-🇺🇸 **English** · 🇧🇷 [Português](CONTRIBUTING.pt-BR.md) · [README](README.md)
+🇺🇸 **English** · 🇧🇷 [Português](CONTRIBUTING-BR.md) · [README](README.md)
 
 CBini OrquestrAI is **not open source**. This repository holds public documentation; the product code is private, so there is no code to
 clone or pull requests to send. What helps most today is critique.

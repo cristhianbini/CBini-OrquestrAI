@@ -1,6 +1,6 @@
 # FAQ — CBini OrquestrAI
 
-🇺🇸 **English** · 🇧🇷 [Português](faq.pt-BR.md)
+🇺🇸 **English** · 🇧🇷 [Português](faq-br.md)
 
 **Is OrquestrAI open source?**
 No. This repository is the public showcase and documentation. The product source code is private; licensing and commercial terms are under preparation.
