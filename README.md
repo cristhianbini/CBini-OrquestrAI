@@ -15,6 +15,25 @@ runs in isolation, and can be traced, measured and undone.
 
 ---
 
+## In one minute
+
+**OrquestrAI is where a team uses AI to build and change software without giving up control.** You describe what you want; AI agents
+plan and write it; every change that would touch something real is shown to a person in plain language and runs only after that person
+approves it — isolated, recorded, and reversible where supported. Each project keeps its own memory, whatever AI model you use.
+
+| | A typical AI chat | OrquestrAI |
+|---|---|---|
+| Who changes the system | You copy and run what the AI wrote | Nothing runs until a person approves a reviewable proposal |
+| Where it runs | Wherever you paste it | In an isolated environment that only sees that project |
+| Undo | By hand | Supported changes are measured and can be reverted |
+| Memory | Tied to a conversation or a model | Belongs to the project; switch models without losing it |
+| Record and cost | Not kept | Who proposed, who approved, what ran and what it cost |
+
+**Start here:** this page (2 min) → [glossary](docs/glossary.md) → [how it is built](docs/arch.md) → [what leaves your server](docs/trust.md)
+→ [proof behind each claim](docs/evidence.md) → [evaluate it in 10 minutes](docs/eval.md).
+
+**Not for:** running untrusted third-party code, fully autonomous "fire and forget" agents, or teams looking for a hosted SaaS today.
+
 ## Why OrquestrAI
 
 AI can already write a large share of the code for real applications. Production needs more than code: someone must decide what is
@@ -217,7 +236,8 @@ How to take part: [CONTRIBUTING](CONTRIBUTING.md) · [evaluate the idea in 10 mi
 
 ## About
 
-**CBini OrquestrAI** — conceived and directed by Cristhian Bini, CBini Soluções em TI.
+**CBini OrquestrAI** — conceived and directed by Cristhian Bini, CBini Soluções em TI. Built with the assistance of multiple AI systems,
+under human decision and independent review — the same process the product applies to its users' projects.
 
 This repository is the public documentation and showcase for CBini OrquestrAI. The product source code is not published here and
 this project is not distributed as open-source software. Its licensing model is currently being defined. All rights reserved.

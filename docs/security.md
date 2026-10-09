@@ -21,6 +21,8 @@ public issues or discussions.
 | Veto is final | A vetoed version of a command can never be executed. |
 | Isolated execution | Approved commands run in a disposable environment with no network, a read-only system, no privileges and only their own project mounted. |
 | Refuse when unsure | Commands whose effect cannot be analyzed safely are refused before running. |
+| One change at a time | Executions, reverts and publications of a project are mutually exclusive; a second one is refused, not queued blindly. |
+| Links and special files | Before a change runs, the state it may touch is captured; content that cannot be captured safely (such as hard links or special files) is refused instead of guessed. |
 | Read-only inspection | The project terminal is read-only and network-less, in a container per connection. |
 | Step-up for sensitive access | Login uses two factors; terminal and administrative sessions require a fresh second factor. |
 | Tamper-evident evidence | Executions are recorded in a hash-chained log; terminal sessions are sealed. |

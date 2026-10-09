@@ -21,6 +21,8 @@ discusiones públicas.
 | El veto es definitivo | Una versión vetada de un comando nunca puede ejecutarse. |
 | Ejecución aislada | Los comandos aprobados se ejecutan en un entorno desechable sin red, con sistema de solo lectura, sin privilegios y solo con su propio proyecto montado. |
 | Rechazar ante la duda | Los comandos cuyo efecto no puede analizarse con seguridad se rechazan antes de ejecutarse. |
+| Un cambio a la vez | Las ejecuciones, reversiones y publicaciones de un proyecto son mutuamente excluyentes; una segunda se rechaza, no se encola a ciegas. |
+| Enlaces y archivos especiales | Antes de ejecutar un cambio se guarda el estado que puede tocar; lo que no puede guardarse con seguridad (como enlaces duros o archivos especiales) se rechaza en lugar de suponerse. |
 | Inspección de solo lectura | La terminal del proyecto es de solo lectura y sin red, en un contenedor por conexión. |
 | Confirmación reforzada para accesos sensibles | El inicio de sesión usa dos factores; las sesiones de terminal y administrativas exigen un segundo factor nuevo. |
 | Evidencia a prueba de manipulación | Las ejecuciones se registran en un log encadenado por hash; las sesiones de terminal se sellan. |

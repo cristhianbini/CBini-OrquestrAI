@@ -24,6 +24,7 @@ Key facts:
 - [Security model](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/security.md): proven properties, validation, assumptions, limits, non-goals
 - [Trust boundaries](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/trust.md): deployment model, what leaves the installation, where a change becomes real
 - [Engineering evidence](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/evidence.md): how capabilities are promoted, capability matrix, full-stack evolution contract
+- [Glossary](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/glossary.md): plain-language definitions (project, command block, LAVE, Factory, revert, preview)
 - [FAQ](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/faq.md)
 - [Roadmap](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/roadmap.md)
 - [Evaluation guide](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/eval.md): evaluate the idea in 10 minutes

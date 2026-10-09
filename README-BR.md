@@ -15,6 +15,25 @@ aprovação humana, roda isolada e pode ser rastreada, medida e desfeita.
 
 ---
 
+## Em um minuto
+
+**O OrquestrAI é onde um time usa IA para construir e alterar software sem abrir mão do controle.** Você descreve o que quer; agentes
+de IA planejam e escrevem; toda mudança que mexeria em algo real é mostrada a uma pessoa em linguagem humana e só roda depois que essa
+pessoa aprova — isolada, registrada e, onde suportado, reversível. Cada projeto guarda a própria memória, qualquer que seja o modelo de IA.
+
+| | Um chat de IA comum | OrquestrAI |
+|---|---|---|
+| Quem altera o sistema | Você copia e roda o que a IA escreveu | Nada roda antes de uma pessoa aprovar uma proposta revisável |
+| Onde roda | Onde você colar | Num ambiente isolado que só enxerga aquele projeto |
+| Desfazer | À mão | Mudanças suportadas são medidas e podem ser revertidas |
+| Memória | Presa a uma conversa ou a um modelo | Pertence ao projeto; troque de modelo sem perdê-la |
+| Registro e custo | Não ficam | Quem propôs, quem aprovou, o que rodou e quanto custou |
+
+**Comece aqui:** esta página (2 min) → [glossário](docs/glossary-br.md) → [como é construído](docs/arch-br.md) → [o que sai do seu servidor](docs/trust-br.md)
+→ [a prova de cada afirmação](docs/evidence-br.md) → [avalie em 10 minutos](docs/eval-br.md).
+
+**Não é para:** rodar código de terceiros não confiável, agentes totalmente autônomos do tipo "dispara e esquece", nem para quem procura um SaaS hospedado hoje.
+
 ## Por que o OrquestrAI
 
 A IA já escreve boa parte do código de aplicações reais. Produção precisa de mais do que código: alguém tem de decidir o que pode rodar,
@@ -169,7 +188,8 @@ Como participar: [CONTRIBUTING](CONTRIBUTING-BR.md) · [avalie a ideia em 10 min
 
 ## Sobre
 
-**CBini OrquestrAI** — concebido e dirigido por Cristhian Bini, CBini Soluções em TI.
+**CBini OrquestrAI** — concebido e dirigido por Cristhian Bini, CBini Soluções em TI. Construído com a assistência de vários sistemas
+de IA, sob decisão humana e revisão independente — o mesmo processo que o produto aplica aos projetos de quem o usa.
 
 Este repositório é a documentação pública e a vitrine do CBini OrquestrAI. O código-fonte do produto não está publicado aqui. Este
 projeto não é distribuído como software open source. O modelo de licenciamento está em definição. Todos os direitos reservados.

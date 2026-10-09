@@ -15,6 +15,26 @@ aprobación de una persona, se ejecuta de forma aislada y puede rastrearse, medi
 
 ---
 
+## En un minuto
+
+**OrquestrAI es donde un equipo usa IA para construir y modificar software sin renunciar al control.** Usted describe lo que quiere;
+agentes de IA lo planifican y lo escriben; todo cambio que tocaría algo real se muestra a una persona en lenguaje claro y solo se ejecuta
+después de que esa persona lo aprueba: aislado, registrado y, donde está soportado, reversible. Cada proyecto conserva su propia memoria,
+sea cual sea el modelo de IA.
+
+| | Un chat de IA común | OrquestrAI |
+|---|---|---|
+| Quién cambia el sistema | Usted copia y ejecuta lo que escribió la IA | Nada se ejecuta hasta que una persona aprueba una propuesta revisable |
+| Dónde se ejecuta | Donde lo pegue | En un entorno aislado que solo ve ese proyecto |
+| Deshacer | A mano | Los cambios soportados se miden y pueden revertirse |
+| Memoria | Atada a una conversación o a un modelo | Pertenece al proyecto; cambie de modelo sin perderla |
+| Registro y costo | No se conservan | Quién propuso, quién aprobó, qué se ejecutó y cuánto costó |
+
+**Empiece aquí:** esta página (2 min) → [glosario](docs/glossary-es.md) → [cómo está construido](docs/arch-es.md) → [qué sale de su servidor](docs/trust-es.md)
+→ [la prueba de cada afirmación](docs/evidence-es.md) → [evalúelo en 10 minutos](docs/eval-es.md).
+
+**No es para:** ejecutar código de terceros no confiable, agentes totalmente autónomos del tipo "lanzar y olvidar", ni para quien busca hoy un SaaS alojado.
+
 ## Por qué OrquestrAI
 
 La IA ya puede escribir buena parte del código de aplicaciones reales. Producción necesita más que código: alguien tiene que decidir qué
@@ -210,7 +230,8 @@ IA se ejecute bajo su propia gobernanza.
 
 ## Acerca de
 
-**CBini OrquestrAI**: concebido y dirigido por Cristhian Bini, CBini Soluções em TI.
+**CBini OrquestrAI**: concebido y dirigido por Cristhian Bini, CBini Soluções em TI. Construido con la asistencia de varios sistemas de
+IA, bajo decisión humana y revisión independiente: el mismo proceso que el producto aplica a los proyectos de quienes lo usan.
 
 Este repositorio es la documentación pública y la vitrina de CBini OrquestrAI. El código fuente del producto no se publica aquí. Este
 proyecto no se distribuye como software de código abierto. El modelo de licenciamiento está actualmente en definición. Todos los derechos

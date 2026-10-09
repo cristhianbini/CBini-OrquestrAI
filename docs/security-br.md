@@ -21,6 +21,8 @@ em issues ou discussões públicas.
 | Veto é definitivo | Uma versão vetada de um comando nunca pode ser executada. |
 | Execução isolada | Comandos aprovados rodam num ambiente descartável, sem rede, sistema somente leitura, sem privilégios e só com o próprio projeto montado. |
 | Na dúvida, recusa | Comandos cujo efeito não pode ser analisado com segurança são recusados antes de rodar. |
+| Uma mudança por vez | Execuções, reversões e publicações de um projeto são mutuamente exclusivas; uma segunda é recusada, não enfileirada às cegas. |
+| Links e arquivos especiais | Antes de uma mudança rodar, o estado que ela pode tocar é guardado; o que não pode ser guardado com segurança (como hardlinks ou arquivos especiais) é recusado em vez de adivinhado. |
 | Inspeção somente leitura | O terminal do projeto é somente leitura e sem rede, num container por conexão. |
 | Confirmação reforçada | Login com dois fatores; sessões de terminal e administrativas exigem um segundo fator novo. |
 | Evidência à prova de adulteração | Execuções num registro encadeado por hash; sessões de terminal seladas. |
