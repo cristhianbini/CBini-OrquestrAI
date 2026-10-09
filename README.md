@@ -6,7 +6,7 @@
 
 🇺🇸 **English** · 🇧🇷 [Português](README-BR.md) · 🇪🇸 [Español](README-ES.md)
 
-[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Trust boundaries](docs/trust.md) · [Engineering evidence](docs/evidence.md) · [Maturity](#current-maturity) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Trust boundaries](docs/trust.md) · [Engineering evidence](docs/evidence.md) · [Maturity](#current-maturity) · [Demos](#demos) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **The engineering layer around AI: agents propose, people decide, the system keeps the evidence.**
 
@@ -127,6 +127,11 @@ Describe a project in a few sentences; the factory plans it, builds it and opens
   path does not exercise; it was held back until they were fixed. It was promoted after a 20-item human acceptance on a live deployment
   (October 2026).
 - **More stacks — planned,** built on the same pattern as the first full-stack path.
+
+## Demos
+
+Real recordings of OrquestrAI in use and of its evolution are published on the official CBini Soluções em TI channel
+(in Portuguese): [channel](https://www.youtube.com/@cbinisolucaoemti) · [all videos](https://www.youtube.com/@cbinisolucaoemti/videos).
 
 ## Architecture
 

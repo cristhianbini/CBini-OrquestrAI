@@ -18,7 +18,7 @@ Solo la dirección general. No se prometen fechas; los puntos avanzan cuando se 
 - **Despliegue autoalojado reproducible:** recuperación completa demostrada en un servidor nuevo.
 - **Instalador guiado:** un comando en un servidor nuevo y luego un asistente web (dominio, administrador, autenticación de dos factores,
   proveedores, respaldo, diagnóstico).
-- **Demostraciones públicas:** recorridos en video y capturas limpias.
+- **Más demostraciones públicas:** capturas limpias y nuevas grabaciones en el [canal oficial](https://www.youtube.com/@cbinisolucaoemti/videos).
 
 ## Después
 - Stacks y bases de datos adicionales validados sobre la misma base.

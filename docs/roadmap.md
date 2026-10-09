@@ -18,7 +18,7 @@ High-level direction only. No dates are promised; items move when they are prove
 - **Reproducible self-hosted deployment** — full recovery proven on a clean server.
 - **Guided installer** — one command on a clean server, then a web setup wizard (domain, administrator, two-factor authentication,
   providers, backup, diagnostics).
-- **Public demos and documentation** — walkthroughs and clean screenshots.
+- **More public walkthroughs** — clean screenshots and more recordings on the [official channel](https://www.youtube.com/@cbinisolucaoemti/videos).
 
 ## Later
 - Additional validated stacks and databases on the same foundation.

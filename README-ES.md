@@ -6,7 +6,7 @@
 
 🇪🇸 **Español** · 🇧🇷 [Português](README-BR.md) · 🇺🇸 [English](README.md)
 
-[Por qué](#por-qué-orquestrai) · [Cómo funciona](#cómo-funciona) · [Arquitectura](docs/arch-es.md) · [Decisiones de diseño](docs/design-es.md) · [Seguridad](docs/security-es.md) · [Fronteras de confianza](docs/trust-es.md) · [Evidencia de ingeniería](docs/evidence-es.md) · [Madurez](#madurez-actual) · [Hoja de ruta](docs/roadmap-es.md) · [Preguntas](docs/faq-es.md) · [Evaluar en 10 minutos](docs/eval-es.md)
+[Por qué](#por-qué-orquestrai) · [Cómo funciona](#cómo-funciona) · [Arquitectura](docs/arch-es.md) · [Decisiones de diseño](docs/design-es.md) · [Seguridad](docs/security-es.md) · [Fronteras de confianza](docs/trust-es.md) · [Evidencia de ingeniería](docs/evidence-es.md) · [Madurez](#madurez-actual) · [Demostraciones](#demostraciones) · [Hoja de ruta](docs/roadmap-es.md) · [Preguntas](docs/faq-es.md) · [Evaluar en 10 minutos](docs/eval-es.md)
 
 **La capa de ingeniería alrededor de la IA: los agentes proponen, las personas deciden, el sistema conserva la evidencia.**
 
@@ -129,6 +129,11 @@ Planificar → Construir → Revisar → Generar la aplicación → Publicar.
   de falla que el camino feliz no ejercita, y se retuvo hasta corregirlos. Se promovió tras una aceptación humana de 20 puntos en una
   instalación real (octubre de 2026).
 - **Más stacks — planificado,** sobre el mismo patrón del primer camino full stack.
+
+## Demostraciones
+
+Grabaciones reales de OrquestrAI en uso y de su evolución se publican en el canal oficial de CBini Soluções em TI
+(en portugués): [canal](https://www.youtube.com/@cbinisolucaoemti) · [todos los videos](https://www.youtube.com/@cbinisolucaoemti/videos).
 
 ## Arquitectura
 

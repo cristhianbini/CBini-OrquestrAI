@@ -6,7 +6,7 @@
 
 🇧🇷 **Português** · 🇺🇸 [English](README.md) · 🇪🇸 [Español](README-ES.md)
 
-[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Fronteiras de confiança](docs/trust-br.md) · [Evidência de engenharia](docs/evidence-br.md) · [Maturidade](#maturidade-atual) · [Roadmap](docs/roadmap-br.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Fronteiras de confiança](docs/trust-br.md) · [Evidência de engenharia](docs/evidence-br.md) · [Maturidade](#maturidade-atual) · [Demonstrações](#demonstrações) · [Roadmap](docs/roadmap-br.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **A camada de engenharia em volta da IA: os agentes propõem, as pessoas decidem, o sistema guarda a evidência.**
 
@@ -117,6 +117,11 @@ Descreva o projeto em poucas frases; a fábrica planeja, constrói e abre um pre
   de falha que o caminho feliz não exercita, e ele foi segurado até a correção. Foi promovido depois de um aceite humano de 20 itens numa
   instalação real (outubro de 2026).
 - **Outras stacks — planejado,** sobre o mesmo padrão do primeiro caminho full stack.
+
+## Demonstrações
+
+Gravações reais do OrquestrAI em uso e da sua evolução estão no canal oficial da CBini Soluções em TI:
+[canal](https://www.youtube.com/@cbinisolucaoemti) · [todos os vídeos](https://www.youtube.com/@cbinisolucaoemti/videos).
 
 ## Evidência de engenharia
 

@@ -17,7 +17,7 @@ Só a direção geral. Nenhuma data é prometida; os itens avançam quando são 
 ## Próximo
 - **Instalação própria reproduzível** — recuperação completa provada num servidor novo.
 - **Instalador guiado** — um comando num servidor limpo e um assistente web (domínio, administrador, dois fatores, provedores, backup, diagnóstico).
-- **Demonstrações e documentação públicas** — roteiros e screenshots limpos.
+- **Mais demonstrações públicas** — screenshots limpos e novas gravações no [canal oficial](https://www.youtube.com/@cbinisolucaoemti/videos).
 
 ## Depois
 - Mais stacks e bancos validados sobre a mesma fundação.
