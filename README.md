@@ -4,7 +4,7 @@
 
 🇧🇷 Built in Brazil by CBini Soluções em TI
 
-🇺🇸 **English** · 🇧🇷 [Português](README-BR.md)
+🇺🇸 **English** · 🇧🇷 [Português](README-BR.md) · 🇪🇸 [Español](README-ES.md)
 
 [Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Maturity](#current-maturity) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
@@ -58,6 +58,25 @@ backups and recovery procedures, and fail-closed behavior at critical points. A 
 | **Governed knowledge** | The system proposes lessons from its own work; they reach the agents only after a person approves them. |
 | **Self-hosted** | One dedicated deployment per organization, on infrastructure it controls. |
 
+## The project is the unit of context
+
+Knowledge belongs to the project, not to the model in use at the moment. Conversations, approved lessons, command history and costs
+are stored per project. The operator can switch models in the middle of the work; the next model receives the same project context.
+A different project starts from its own context and does not inherit the first one.
+
+```mermaid
+flowchart LR
+    subgraph A[Project A]
+      a1[Chat] --- a2[Lessons] --- a3[Executions]
+    end
+    subgraph B[Project B]
+      b1[Chat] --- b2[Lessons] --- b3[Executions]
+    end
+    A --> m1[Model 1]
+    A -. switch .-> m2[Model 2]
+    B --> m3[Any model]
+```
+
 ## How it works
 
 ```mermaid
@@ -79,13 +98,16 @@ flowchart LR
 Describe a project in a few sentences; the factory plans it, builds it and opens a preview.
 
 - **Static websites — available end to end:** brief → agent plan → generated site → automated checks → preview on a separate origin.
-- **Full-stack applications — in validation:** a single, fully supported path — **React + Vite + TypeScript, Express and SQLite** in one
+- **Full-stack applications — available:** a single, fully supported path — **React + Vite + TypeScript, Express and SQLite** in one
   process. The AI writes the application *specification*; OrquestrAI generates the application from a tested template, so the
-  infrastructure is the same every time. Generation is proven; running each application in its own isolated runtime with a preview is
-  the work in progress.
-  *How validation works here:* the generator passed its functional tests, then an independent read-only audit found failure cases the
-  happy path does not exercise. It was not promoted. It will be, after those cases are fixed and the audit passes.
-- **More stacks — planned,** built on the same pattern once the first full-stack path is complete.
+  infrastructure is the same every time. Each application runs in its own runtime with no network access, opens through the preview on a
+  separate origin, and is published automatically when the factory finishes and after each approved change — if a new version fails, the
+  previous one stays online. Changes requested in chat are **additive** (new fields, data preserved); removing or renaming a field is refused.
+  Today an application has one data model (list, create, delete).
+  *How it got here:* the generator first passed its functional tests, then an independent read-only audit found failure cases the happy
+  path does not exercise; it was held back until they were fixed. It was promoted after a 20-item human acceptance on a live deployment
+  (October 2026).
+- **More stacks — planned,** built on the same pattern as the first full-stack path.
 
 ## Architecture
 
@@ -112,7 +134,7 @@ flowchart TB
 A capability is not counted because the code exists. It is counted when the path has been proven:
 **design → automated proof → human proof on a live system → independent review when sensitive → promotion.**
 Passing the happy path is not enough: the first full-stack generator passed its functional tests, an independent review found failure cases,
-and it was held back. Details: [technical overview](docs/arch.md#engineering-evidence).
+and it was held back until they were fixed; it was promoted only after human acceptance on a live system. Details: [technical overview](docs/arch.md#engineering-evidence).
 
 ## Security by design
 
@@ -121,7 +143,7 @@ In short — design properties, not guarantees:
 
 - **Least privilege** — execution without network, privileges or access outside the project.
 - **Explicit execution** — no path runs AI output without human confirmation; administrative access is separate and requires a second factor.
-- **Isolation** — approved commands and project terminals run in per-project, network-less containers; previews are served from a separate origin. Per-project network isolation for long-running applications is in validation.
+- **Isolation** — approved commands and project terminals run in per-project, network-less containers; previews are served from a separate origin. Full-stack applications run without network access and are reached only through the preview.
 - **Reversibility** — where supported, changes are undone with a preview of the undo.
 - **Audit trail** — tamper-evident execution records; sealed terminal sessions.
 - **Independent review** — changes to execution, isolation and recovery pass a read-only external audit before promotion.
@@ -150,7 +172,7 @@ is subject to that provider's terms.
 | Governed lessons | Available |
 | Factory: static websites | Available |
 | Encrypted off-site backup with verification | Available |
-| Factory: full-stack applications (React · Express · SQLite) | In validation |
+| Factory: full-stack applications (React · Express · SQLite) | Available |
 | Additional AI providers | Configurable |
 | Full recovery on a clean server | Planned |
 | Guided installer (one command + setup wizard) | Planned |
@@ -162,7 +184,7 @@ validation level of the main paths. **Planned** — not a feature yet.
 
 ## Roadmap
 
-- Full-stack factory end to end: isolated runtime, preview, changes through approved commands, backup of application data.
+- Full-stack applications beyond the first path: richer data models on the same additive-change contract.
 - Reproducible self-hosted deployment and recovery validated on a clean server.
 - Guided installer and setup wizard.
 - More validated stacks and databases on the same foundation.
@@ -198,6 +220,6 @@ How to take part: [CONTRIBUTING](CONTRIBUTING.md) · [evaluate the idea in 10 mi
 **CBini OrquestrAI** — conceived and directed by Cristhian Bini, CBini Soluções em TI.
 
 This repository is the public documentation and showcase for CBini OrquestrAI. The product source code is not published here and
-this is not an open-source project. Licensing and commercial terms are under preparation. All rights reserved.
+this project is not distributed as open-source software. Its licensing model is currently being defined. All rights reserved.
 
 More: [technical overview](docs/arch.md) · [security model](docs/security.md) · [public roadmap](docs/roadmap.md) · [FAQ](docs/faq.md)

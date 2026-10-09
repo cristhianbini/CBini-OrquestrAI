@@ -3,7 +3,7 @@
 🇺🇸 **English** · 🇧🇷 [Português](faq-br.md)
 
 **Is OrquestrAI open source?**
-No. This repository is the public showcase and documentation. The product source code is private; licensing and commercial terms are under preparation.
+No. This repository is the public showcase and documentation. The product source code is private; this project is not distributed as open-source software, and its licensing model is currently being defined.
 
 **Is this repository the source code?**
 No. It contains only public documentation. The product is developed in a private repository.
@@ -17,8 +17,9 @@ No. The chat never executes. Every concrete change becomes a command block that 
 
 **What does "reversible" mean here?**
 For supported changes, the system records what a change may touch and measures what it actually changed; undoing it shows what will be
-reverted before doing it. Data written by a running application is outside this mechanism by design; backing up application data
-is part of the full-stack work in validation.
+reverted before doing it. Data written by a running application is outside this mechanism by design; it is protected by the nightly backup instead. Undoing a
+change to a full-stack application restores its code and republishes the previous version; database columns already added are kept,
+so no data is lost.
 
 **Does my data stay on my server?**
 OrquestrAI runs on infrastructure you control. When external AI providers are used, the content sent to those providers is subject to
@@ -29,7 +30,8 @@ The validated agent routes use Anthropic and OpenAI models today. Groq, Gemini, 
 be configured and tested from the control panel.
 
 **Can it build full applications?**
-Static websites work end to end today. The first full-stack path (React + Vite + TypeScript, Express, SQLite) is in validation.
+Yes, within one supported path. Static websites and the first full-stack path (React + Vite + TypeScript, Express, SQLite) work end to end
+today; a generated application has one data model and evolves through additive changes you approve.
 
 **Can I install it myself?**
 Today installation follows a documented manual procedure. A guided installer is planned.

@@ -28,14 +28,13 @@ public issues or discussions.
 | Secrets at rest | Provider keys are encrypted on the server and never returned to the browser. |
 | Separate origins | Project previews are served from a different origin than the cockpit. |
 | Recovery discipline | Daily encrypted off-site backups, automatically verified for completeness and for secrets in clear text; restore proven in isolation. |
+| Full-stack applications | Each generated application runs in its own runtime without network access, from immutable releases, reached only through the preview origin; a failed new version leaves the previous one online. |
+| Application data in backups | Databases of generated applications are included in the nightly backup through a consistent snapshot. |
 
 "Proven" means covered by automated tests and confirmed by a human operator on a live deployment.
 
 ## In validation
 
-- **Long-running applications per project** (the full-stack factory path): per-project network isolation, immutable releases, resource
-  limits and lifecycle controls are designed and independently reviewed; they are not enabled for operators yet.
-- **Consistent backup of application databases** created by generated applications.
 - **Full recovery on a clean server.**
 
 ## Assumptions

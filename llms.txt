@@ -12,7 +12,8 @@ Key facts:
 - Maturity labels: Available (proven by automated tests and a human operator on a live deployment), In validation (built and tested, not
   promoted), Configurable, Planned.
 - Available: governed execution, revert of file changes, read-only project terminal, cost telemetry, governed lessons, static-site factory,
-  encrypted off-site backup. In validation: full-stack factory (React + Vite + TypeScript, Express, SQLite). Planned: clean-server
+  encrypted off-site backup, full-stack factory (React + Vite + TypeScript, Express, SQLite; one data model, additive changes).
+  Planned: clean-server
   recovery, guided installer, more stacks.
 - When cloud AI providers are used, content sent to them follows those providers' policies.
 

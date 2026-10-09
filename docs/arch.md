@@ -90,8 +90,9 @@ approves and activates it. The interface separates the AI's suggestion from the 
 
 A short brief becomes a project: agents plan it, a generator builds it, automated checks reject output that would not work in the sandboxed
 preview, and the result opens on a separate origin. Static sites work end to end. The first full-stack path — React + Vite + TypeScript,
-Express and SQLite in one process — is in validation: the AI writes a validated application specification and the application is generated
-from a tested template, so infrastructure is identical across projects. Running each application in its own isolated runtime is the work in progress.
+Express and SQLite in one process — works end to end: the AI writes a validated application specification and the application is generated
+from a tested template, so infrastructure is identical across projects. Each application runs in its own runtime without network access,
+is published automatically after the factory and after each approved change, and keeps the previous version online if a new build fails.
 
 ## Recovery
 
@@ -110,4 +111,4 @@ flowchart LR
 
 Sensitive changes — execution, isolation, recovery — are reviewed read-only by an independent auditor before promotion. A failed review
 stops the promotion, even when every functional test passes. The first full-stack generator is an example: it passed its tests, the review
-found failure cases outside the happy path, and it was held back until they are fixed.
+found failure cases outside the happy path, and it was held back until they were fixed; it was promoted after a 20-item human acceptance on a live deployment.

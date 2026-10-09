@@ -3,7 +3,7 @@
 🇧🇷 **Português** · 🇺🇸 [English](faq.md)
 
 **O OrquestrAI é open source?**
-Não. Este repositório é a vitrine e a documentação pública. O código-fonte do produto é privado; licenciamento e termos comerciais estão em preparação.
+Não. Este repositório é a vitrine e a documentação pública. O código-fonte do produto é privado; este projeto não é distribuído como software open source, e o modelo de licenciamento está em definição.
 
 **Este repositório é o código-fonte?**
 Não. Ele contém só documentação pública. O produto é desenvolvido num repositório privado.
@@ -17,8 +17,9 @@ Não. O chat nunca executa. Toda mudança concreta vira um bloco de comando que 
 
 **O que "reversível" quer dizer aqui?**
 Nas mudanças suportadas, o sistema registra o que a mudança pode tocar e mede o que ela de fato mudou; desfazer mostra antes o que será
-revertido. Dados gravados por uma aplicação em execução ficam fora desse mecanismo, por desenho; o backup dos dados de aplicações faz
-parte do trabalho de full stack em validação.
+revertido. Dados gravados por uma aplicação em execução ficam fora desse mecanismo, por desenho; eles são protegidos pelo backup diário. Desfazer
+uma mudança numa aplicação full stack restaura o código e republica a versão anterior; colunas já criadas no banco são mantidas, então
+nenhum dado se perde.
 
 **Meus dados ficam no meu servidor?**
 O OrquestrAI roda em infraestrutura que você controla. Quando provedores de IA externos são usados, o conteúdo enviado a eles segue os
@@ -29,7 +30,8 @@ As rotas validadas dos agentes usam hoje modelos Anthropic e OpenAI. Groq, Gemin
 OpenAI podem ser configurados e testados pelo painel, fora das rotas validadas.
 
 **Ele constrói aplicações completas?**
-Sites estáticos funcionam de ponta a ponta hoje. O primeiro caminho full stack (React + Vite + TypeScript, Express, SQLite) está em validação.
+Sim, dentro de um caminho suportado. Sites estáticos e o primeiro caminho full stack (React + Vite + TypeScript, Express, SQLite) funcionam
+de ponta a ponta hoje; a aplicação gerada tem um modelo de dados e evolui por mudanças aditivas que você aprova.
 
 **Posso instalar eu mesmo?**
 Hoje a instalação segue um procedimento manual documentado. Um instalador guiado está planejado.

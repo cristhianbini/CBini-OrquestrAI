@@ -28,14 +28,13 @@ em issues ou discussões públicas.
 | Segredos em repouso | Chaves de provedor cifradas no servidor e nunca devolvidas ao navegador. |
 | Origens separadas | Previews de projeto servidos em origem diferente do cockpit. |
 | Disciplina de recuperação | Backup cifrado diário fora do servidor, verificado automaticamente (completude e segredo em claro); restauração provada em isolamento. |
+| Aplicações full stack | Cada aplicação gerada roda no próprio ambiente, sem acesso à rede, a partir de releases imutáveis, alcançada só pela origem de preview; uma versão nova que falha deixa a anterior no ar. |
+| Dados de aplicação no backup | Os bancos das aplicações geradas entram no backup diário por snapshot consistente. |
 
 "Provado" significa coberto por testes automáticos e confirmado por um operador humano numa instalação real.
 
 ## Em validação
 
-- **Aplicações contínuas por projeto** (caminho full stack da fábrica): isolamento de rede por projeto, releases imutáveis, limites de
-  recursos e controle de ciclo de vida estão desenhados e revisados de forma independente; ainda não liberados para operadores.
-- **Backup consistente dos bancos** das aplicações geradas.
 - **Recuperação completa num servidor novo.**
 
 ## Pressupostos

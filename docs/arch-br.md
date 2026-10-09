@@ -55,8 +55,9 @@ O acesso administrativo ao servidor é uma superfície separada, que exige segun
 
 Um briefing curto vira projeto: agentes planejam, um gerador constrói, checagens automáticas recusam o que não funcionaria no preview
 isolado, e o resultado abre em origem separada. Sites estáticos funcionam de ponta a ponta. O primeiro caminho full stack — React + Vite +
-TypeScript, Express e SQLite num processo — está em validação: a IA escreve uma especificação validada e a aplicação é gerada a partir de um
-modelo testado, com infraestrutura idêntica entre projetos. Rodar cada aplicação no próprio ambiente isolado é o trabalho em andamento.
+TypeScript, Express e SQLite num processo — funciona de ponta a ponta: a IA escreve uma especificação validada e a aplicação é gerada a partir de um
+modelo testado, com infraestrutura idêntica entre projetos. Cada aplicação roda no próprio ambiente, sem acesso à rede, é publicada sozinha
+depois da fábrica e de cada mudança aprovada, e mantém a versão anterior no ar se o build novo falhar.
 
 ## Recuperação
 
@@ -69,4 +70,4 @@ servidor novo está planejada e ainda não provada.
 Uma capacidade não conta porque o código existe. Conta quando o caminho foi provado: **desenho → prova automática → prova humana num
 sistema real → revisão independente quando sensível → promoção**. Mudanças de execução, isolamento e recuperação passam por um auditor
 independente, somente leitura, antes de promover; uma reprovação para a promoção mesmo com todos os testes funcionais verdes. O primeiro
-gerador full stack é o exemplo: passou nos testes, a revisão achou casos de falha fora do caminho feliz, e ele foi segurado até a correção.
+gerador full stack é o exemplo: passou nos testes, a revisão achou casos de falha fora do caminho feliz, e ele foi segurado até a correção; foi promovido depois de um aceite humano de 20 itens numa instalação real.

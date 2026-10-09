@@ -4,7 +4,7 @@
 
 🇧🇷 Desenvolvido no Brasil pela CBini Soluções em TI
 
-🇧🇷 **Português** · 🇺🇸 [English](README.md)
+🇧🇷 **Português** · 🇺🇸 [English](README.md) · 🇪🇸 [Español](README-ES.md)
 
 [Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Maturidade](#maturidade-atual) · [Roadmap](docs/roadmap-br.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
@@ -58,6 +58,25 @@ de custo, backup cifrado e procedimentos de recuperação, e comportamento fail-
 | **Conhecimento governado** | O sistema propõe lições a partir do próprio trabalho; elas só chegam aos agentes depois que uma pessoa aprova. |
 | **Instalação própria** | Uma instalação dedicada por organização, em infraestrutura que ela controla. |
 
+## O projeto é a unidade de contexto
+
+O conhecimento pertence ao projeto, não ao modelo usado naquele momento. Conversas, lições aprovadas, histórico de comandos e custos
+ficam guardados por projeto. O operador pode trocar de modelo no meio do trabalho; o modelo seguinte recebe o mesmo contexto do
+projeto. Outro projeto parte do próprio contexto e não herda o do primeiro.
+
+```mermaid
+flowchart LR
+    subgraph A[Projeto A]
+      a1[Chat] --- a2[Lições] --- a3[Execuções]
+    end
+    subgraph B[Projeto B]
+      b1[Chat] --- b2[Lições] --- b3[Execuções]
+    end
+    A --> m1[Modelo 1]
+    A -. troca .-> m2[Modelo 2]
+    B --> m3[Qualquer modelo]
+```
+
 ## Como funciona
 
 Intenção humana → agentes especializados planejam e constroem → proposta (bloco de comando) → revisão (explicar, vetar com motivo ou
@@ -69,25 +88,29 @@ O diagrama está na [versão em inglês](README.md#how-it-works).
 Descreva o projeto em poucas frases; a fábrica planeja, constrói e abre um preview.
 
 - **Sites estáticos — disponível de ponta a ponta:** briefing → plano dos agentes → site gerado → checagens automáticas → preview em origem separada.
-- **Aplicações full stack — em validação:** um único caminho totalmente suportado — **React + Vite + TypeScript, Express e SQLite** num só
+- **Aplicações full stack — disponível:** um único caminho totalmente suportado — **React + Vite + TypeScript, Express e SQLite** num só
   processo. A IA escreve a *especificação* da aplicação; o OrquestrAI gera a aplicação a partir de um modelo testado, e a infraestrutura
-  sai sempre igual. A geração está provada; rodar cada aplicação no seu próprio ambiente isolado, com preview, é o trabalho em andamento.
-  *Como a validação funciona aqui:* o gerador passou nos testes funcionais; depois, uma auditoria independente, somente leitura, encontrou
-  casos de falha que o caminho feliz não exercita. Ele não foi promovido — será, depois que esses casos forem corrigidos e a auditoria aprovar.
-- **Outras stacks — planejado,** sobre o mesmo padrão, depois que o primeiro caminho full stack estiver completo.
+  sai sempre igual. Cada aplicação roda no próprio ambiente, sem acesso à rede, abre pelo preview em origem separada e é publicada
+  sozinha quando a fábrica termina e depois de cada mudança aprovada — se a versão nova falhar, a anterior continua no ar. Mudanças pedidas
+  no chat são **aditivas** (campos novos, dados preservados); remover ou renomear campo é recusado. Hoje cada aplicação tem um modelo de
+  dados (listar, criar, excluir).
+  *Como chegou aqui:* o gerador passou primeiro nos testes funcionais; depois, uma auditoria independente, somente leitura, encontrou casos
+  de falha que o caminho feliz não exercita, e ele foi segurado até a correção. Foi promovido depois de um aceite humano de 20 itens numa
+  instalação real (outubro de 2026).
+- **Outras stacks — planejado,** sobre o mesmo padrão do primeiro caminho full stack.
 
 ## Evidência de engenharia
 
 Uma capacidade não conta porque o código existe. Conta quando o caminho foi provado:
 **desenho → prova automática → prova humana num sistema real → revisão independente quando sensível → promoção.**
 Passar no caminho feliz não basta: o primeiro gerador full stack passou nos testes funcionais, uma revisão independente achou casos de falha
-e ele foi segurado. Detalhes: [visão técnica](docs/arch-br.md#evidência-de-engenharia).
+e ele foi segurado até a correção; só foi promovido depois do aceite humano num sistema real. Detalhes: [visão técnica](docs/arch-br.md#evidência-de-engenharia).
 
 ## Segurança por desenho
 
 Modelo completo — propriedades provadas, o que está em validação, pressupostos, limites e não objetivos: [docs/security-br.md](docs/security-br.md).
 Em resumo — propriedades de desenho, não garantias: menor privilégio · execução explícita (nada roda sem confirmação; acesso administrativo separado,
-com segundo fator) · isolamento (comandos aprovados e terminais do projeto em containers por projeto, sem rede; previews em origem separada; rede isolada por projeto para aplicações contínuas em validação) · reversibilidade onde suportado · trilha de auditoria à
+com segundo fator) · isolamento (comandos aprovados e terminais do projeto em containers por projeto, sem rede; previews em origem separada; aplicações full stack rodam sem acesso à rede e só são alcançadas pelo preview) · reversibilidade onde suportado · trilha de auditoria à
 prova de adulteração · revisão externa independente antes de promover mudanças de execução, isolamento e recuperação · disciplina de
 recuperação (controle de versão, backup cifrado fora do servidor com verificação automática, snapshots).
 
@@ -112,7 +135,7 @@ um provedor de IA em nuvem é usado, o conteúdo enviado a ele segue os termos d
 | Lições governadas | Disponível |
 | Fábrica: sites estáticos | Disponível |
 | Backup cifrado fora do servidor com verificação | Disponível |
-| Fábrica: aplicações full stack (React · Express · SQLite) | Em validação |
+| Fábrica: aplicações full stack (React · Express · SQLite) | Disponível |
 | Outros provedores de IA | Configurável |
 | Recuperação completa num servidor novo | Planejado |
 | Instalador guiado (um comando + assistente) | Planejado |
@@ -148,7 +171,7 @@ Como participar: [CONTRIBUTING](CONTRIBUTING-BR.md) · [avalie a ideia em 10 min
 
 **CBini OrquestrAI** — concebido e dirigido por Cristhian Bini, CBini Soluções em TI.
 
-Este repositório é a documentação pública e a vitrine do CBini OrquestrAI. O código-fonte do produto não está publicado aqui e este não
-é um projeto open source. Licenciamento e termos comerciais em preparação. Todos os direitos reservados.
+Este repositório é a documentação pública e a vitrine do CBini OrquestrAI. O código-fonte do produto não está publicado aqui. Este
+projeto não é distribuído como software open source. O modelo de licenciamento está em definição. Todos os direitos reservados.
 
 Mais: [visão técnica](docs/arch-br.md) · [modelo de segurança](docs/security-br.md) · [roadmap público](docs/roadmap-br.md) · [perguntas frequentes](docs/faq-br.md)

@@ -5,9 +5,12 @@
 Só a direção geral. Nenhuma data é prometida; os itens avançam quando são provados, não quando são anunciados.
 
 ## Agora
+- **Polimento vindo do uso diário** — detalhes de experiência do operador encontrados usando o primeiro caminho full stack todo dia.
+
+## Entregue recentemente
 - **Primeiro caminho full stack, de ponta a ponta** — React + Vite + TypeScript, Express e SQLite: gerado pela fábrica, rodando no próprio
-  ambiente isolado, visível num preview, alterado por comandos aprovados, com os dados da aplicação no backup.
-- **Validação do runtime de projeto** — ciclo de vida, limites de recursos, saúde e isolamento de rede por projeto para aplicações contínuas.
+  ambiente sem acesso à rede, publicado sozinho, alterado por comandos aditivos aprovados, com os dados da aplicação no backup diário.
+  Promovido depois de um aceite humano de 20 itens numa instalação real (outubro de 2026).
 - **Refinamento da fábrica** — criação de projeto mais clara: escolher um *tipo de projeto* em vez de montar componentes um a um.
 
 ## Próximo
