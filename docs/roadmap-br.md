@@ -1,11 +1,12 @@
 # Roadmap público — CBini OrquestrAI
 
-🇧🇷 **Português** · 🇺🇸 [English](roadmap.md)
+🇧🇷 **Português** · 🇺🇸 [English](roadmap.md) · 🇪🇸 [Español](roadmap-es.md)
 
 Só a direção geral. Nenhuma data é prometida; os itens avançam quando são provados, não quando são anunciados.
 
 ## Agora
 - **Polimento vindo do uso diário** — detalhes de experiência do operador encontrados usando o primeiro caminho full stack todo dia.
+- **Validação de piloto** — percursos de ponta a ponta como um cliente usaria, corrigindo só falhas reais.
 
 ## Entregue recentemente
 - **Primeiro caminho full stack, de ponta a ponta** — React + Vite + TypeScript, Express e SQLite: gerado pela fábrica, rodando no próprio

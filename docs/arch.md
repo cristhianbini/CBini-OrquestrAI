@@ -1,6 +1,6 @@
 # Technical overview — CBini OrquestrAI
 
-🇺🇸 **English** · 🇧🇷 [Português](arch-br.md) · [README](../README.md) · [Security model](security.md)
+🇺🇸 **English** · 🇧🇷 [Português](arch-br.md) · 🇪🇸 [Español](arch-es.md) · [README](../README.md) · [Security model](security.md)
 
 This page explains how OrquestrAI is organized and where its boundaries are. It describes the product's architecture, not its
 implementation; the source code is private.

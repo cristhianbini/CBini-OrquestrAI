@@ -1,10 +1,10 @@
 # CBini OrquestrAI
 
 > Self-hosted engineering layer for AI: specialized agents propose, people approve, and every executed command is isolated, recorded and,
-> where supported, reversible. This repository is public documentation only; the product source code is private and the project is not open source.
+> where supported, reversible. This repository is public documentation only; the product source code is private and the project is not distributed as open-source software; its licensing model is being defined.
 
 Index for AI agents and tools reading this repository. All links point to public documents in this repository.
-Languages: English (default) and Brazilian Portuguese (files ending in -BR.md / -br.md).
+Languages: English (default), Brazilian Portuguese (files ending in -BR.md / -br.md) and Spanish (files ending in -ES.md / -es.md).
 
 Key facts:
 - AI-proposed commands never run on their own; a person approves each one. Factory-generated content is written by validated generators.
@@ -22,6 +22,8 @@ Key facts:
 - [Technical overview](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/arch.md): control and execution planes, life of a change, engineering evidence
 - [Design decisions](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/design.md): why each boundary exists and the trade-off it accepts
 - [Security model](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/security.md): proven properties, validation, assumptions, limits, non-goals
+- [Trust boundaries](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/trust.md): deployment model, what leaves the installation, where a change becomes real
+- [Engineering evidence](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/evidence.md): how capabilities are promoted, capability matrix, full-stack evolution contract
 - [FAQ](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/faq.md)
 - [Roadmap](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/roadmap.md)
 - [Evaluation guide](https://github.com/cristhianbini/CBini-OrquestrAI/blob/main/docs/eval.md): evaluate the idea in 10 minutes

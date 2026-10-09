@@ -1,12 +1,12 @@
 # CBini OrquestrAI
 
-![Self-hosted](https://img.shields.io/badge/deployment-self--hosted-2f3b4c) ![Human in the loop](https://img.shields.io/badge/governance-human--in--the--loop-2f3b4c) ![Node.js 24](https://img.shields.io/badge/Node.js-24-2f3b4c) ![Status](https://img.shields.io/badge/status-active%20development-2f3b4c)
+![Self-hosted](https://img.shields.io/badge/deployment-self--hosted-2f3b4c) ![Human in the loop](https://img.shields.io/badge/governance-human--in--the--loop-2f3b4c) ![Node.js 24](https://img.shields.io/badge/Node.js-24-2f3b4c) ![Status](https://img.shields.io/badge/status-pilot%20validation-2f3b4c)
 
 🇧🇷 Desenvolvido no Brasil pela CBini Soluções em TI
 
 🇧🇷 **Português** · 🇺🇸 [English](README.md) · 🇪🇸 [Español](README-ES.md)
 
-[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Maturidade](#maturidade-atual) · [Roadmap](docs/roadmap-br.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Fronteiras de confiança](docs/trust-br.md) · [Evidência de engenharia](docs/evidence-br.md) · [Maturidade](#maturidade-atual) · [Roadmap](docs/roadmap-br.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **A camada de engenharia em volta da IA: os agentes propõem, as pessoas decidem, o sistema guarda a evidência.**
 
@@ -104,7 +104,7 @@ Descreva o projeto em poucas frases; a fábrica planeja, constrói e abre um pre
 Uma capacidade não conta porque o código existe. Conta quando o caminho foi provado:
 **desenho → prova automática → prova humana num sistema real → revisão independente quando sensível → promoção.**
 Passar no caminho feliz não basta: o primeiro gerador full stack passou nos testes funcionais, uma revisão independente achou casos de falha
-e ele foi segurado até a correção; só foi promovido depois do aceite humano num sistema real. Detalhes: [visão técnica](docs/arch-br.md#evidência-de-engenharia).
+e ele foi segurado até a correção; só foi promovido depois do aceite humano num sistema real. Processo, estudo de caso e matriz de capacidades: [evidência de engenharia](docs/evidence-br.md).
 
 ## Segurança por desenho
 
@@ -174,4 +174,4 @@ Como participar: [CONTRIBUTING](CONTRIBUTING-BR.md) · [avalie a ideia em 10 min
 Este repositório é a documentação pública e a vitrine do CBini OrquestrAI. O código-fonte do produto não está publicado aqui. Este
 projeto não é distribuído como software open source. O modelo de licenciamento está em definição. Todos os direitos reservados.
 
-Mais: [visão técnica](docs/arch-br.md) · [modelo de segurança](docs/security-br.md) · [roadmap público](docs/roadmap-br.md) · [perguntas frequentes](docs/faq-br.md)
+Mais: [visão técnica](docs/arch-br.md) · [fronteiras de confiança](docs/trust-br.md) · [evidência de engenharia](docs/evidence-br.md) · [modelo de segurança](docs/security-br.md) · [roadmap público](docs/roadmap-br.md) · [perguntas frequentes](docs/faq-br.md)

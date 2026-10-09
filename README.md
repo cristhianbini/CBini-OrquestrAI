@@ -1,12 +1,12 @@
 # CBini OrquestrAI
 
-![Self-hosted](https://img.shields.io/badge/deployment-self--hosted-2f3b4c) ![Human in the loop](https://img.shields.io/badge/governance-human--in--the--loop-2f3b4c) ![Node.js 24](https://img.shields.io/badge/Node.js-24-2f3b4c) ![Status](https://img.shields.io/badge/status-active%20development-2f3b4c)
+![Self-hosted](https://img.shields.io/badge/deployment-self--hosted-2f3b4c) ![Human in the loop](https://img.shields.io/badge/governance-human--in--the--loop-2f3b4c) ![Node.js 24](https://img.shields.io/badge/Node.js-24-2f3b4c) ![Status](https://img.shields.io/badge/status-pilot%20validation-2f3b4c)
 
 🇧🇷 Built in Brazil by CBini Soluções em TI
 
 🇺🇸 **English** · 🇧🇷 [Português](README-BR.md) · 🇪🇸 [Español](README-ES.md)
 
-[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Maturity](#current-maturity) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Trust boundaries](docs/trust.md) · [Engineering evidence](docs/evidence.md) · [Maturity](#current-maturity) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **The engineering layer around AI: agents propose, people decide, the system keeps the evidence.**
 
@@ -134,7 +134,7 @@ flowchart TB
 A capability is not counted because the code exists. It is counted when the path has been proven:
 **design → automated proof → human proof on a live system → independent review when sensitive → promotion.**
 Passing the happy path is not enough: the first full-stack generator passed its functional tests, an independent review found failure cases,
-and it was held back until they were fixed; it was promoted only after human acceptance on a live system. Details: [technical overview](docs/arch.md#engineering-evidence).
+and it was held back until they were fixed; it was promoted only after human acceptance on a live system. Process, case study and capability matrix: [engineering evidence](docs/evidence.md).
 
 ## Security by design
 
@@ -222,4 +222,4 @@ How to take part: [CONTRIBUTING](CONTRIBUTING.md) · [evaluate the idea in 10 mi
 This repository is the public documentation and showcase for CBini OrquestrAI. The product source code is not published here and
 this project is not distributed as open-source software. Its licensing model is currently being defined. All rights reserved.
 
-More: [technical overview](docs/arch.md) · [security model](docs/security.md) · [public roadmap](docs/roadmap.md) · [FAQ](docs/faq.md)
+More: [technical overview](docs/arch.md) · [trust boundaries](docs/trust.md) · [engineering evidence](docs/evidence.md) · [security model](docs/security.md) · [public roadmap](docs/roadmap.md) · [FAQ](docs/faq.md)

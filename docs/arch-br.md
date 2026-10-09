@@ -1,6 +1,6 @@
 # Visão técnica — CBini OrquestrAI
 
-🇧🇷 **Português** · 🇺🇸 [English](arch.md) · [README](../README-BR.md) · [Modelo de segurança](security-br.md)
+🇧🇷 **Português** · 🇺🇸 [English](arch.md) · 🇪🇸 [Español](arch-es.md) · [README](../README-BR.md) · [Modelo de segurança](security-br.md)
 
 Esta página explica como o OrquestrAI se organiza e onde ficam as suas fronteiras. Descreve a arquitetura do produto, não a implementação;
 o código-fonte é privado.

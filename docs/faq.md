@@ -1,6 +1,17 @@
 # FAQ — CBini OrquestrAI
 
-🇺🇸 **English** · 🇧🇷 [Português](faq-br.md)
+🇺🇸 **English** · 🇧🇷 [Português](faq-br.md) · 🇪🇸 [Español](faq-es.md)
+
+**Is OrquestrAI an AI?**
+No. It is an engineering layer that coordinates AI models and providers, specialized agents, per-project context, supervised execution,
+audit and reversibility, with a person deciding where a change becomes real.
+
+**Does it replace developers?**
+No. It organizes AI work so a team can use it under governance: someone defines the intent, reviews and approves.
+
+**Is context tied to one model? Do projects share memory?**
+Context belongs to the project: the operator can switch models and the next one receives the same context. Another project starts from
+its own context and does not inherit the first one.
 
 **Is OrquestrAI open source?**
 No. This repository is the public showcase and documentation. The product source code is private; this project is not distributed as open-source software, and its licensing model is currently being defined.

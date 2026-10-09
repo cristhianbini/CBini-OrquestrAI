@@ -1,12 +1,12 @@
 # CBini OrquestrAI
 
-![Self-hosted](https://img.shields.io/badge/deployment-self--hosted-2f3b4c) ![Human in the loop](https://img.shields.io/badge/governance-human--in--the--loop-2f3b4c) ![Node.js 24](https://img.shields.io/badge/Node.js-24-2f3b4c) ![Status](https://img.shields.io/badge/status-active%20development-2f3b4c)
+![Self-hosted](https://img.shields.io/badge/deployment-self--hosted-2f3b4c) ![Human in the loop](https://img.shields.io/badge/governance-human--in--the--loop-2f3b4c) ![Node.js 24](https://img.shields.io/badge/Node.js-24-2f3b4c) ![Status](https://img.shields.io/badge/status-pilot%20validation-2f3b4c)
 
 🇧🇷 Desarrollado en Brasil por CBini Soluções em TI
 
 🇪🇸 **Español** · 🇧🇷 [Português](README-BR.md) · 🇺🇸 [English](README.md)
 
-[Por qué](#por-qué-orquestrai) · [Cómo funciona](#cómo-funciona) · [Madurez](#madurez-actual) · Documentación técnica (en inglés): [Arquitectura](docs/arch.md) · [Seguridad](docs/security.md) · [Hoja de ruta](docs/roadmap.md) · [Preguntas](docs/faq.md) · [Evaluar en 10 minutos](docs/eval.md)
+[Por qué](#por-qué-orquestrai) · [Cómo funciona](#cómo-funciona) · [Arquitectura](docs/arch-es.md) · [Decisiones de diseño](docs/design-es.md) · [Seguridad](docs/security-es.md) · [Fronteras de confianza](docs/trust-es.md) · [Evidencia de ingeniería](docs/evidence-es.md) · [Madurez](#madurez-actual) · [Hoja de ruta](docs/roadmap-es.md) · [Preguntas](docs/faq-es.md) · [Evaluar en 10 minutos](docs/eval-es.md)
 
 **La capa de ingeniería alrededor de la IA: los agentes proponen, las personas deciden, el sistema conserva la evidencia.**
 
@@ -128,7 +128,7 @@ flowchart TB
     ck --> bk[(Respaldo cifrado y recuperación)]
 ```
 
-Vista técnica completa (en inglés): [docs/arch.md](docs/arch.md).
+Vista técnica completa: [docs/arch-es.md](docs/arch-es.md) · despliegue y datos: [fronteras de confianza](docs/trust-es.md).
 
 ## Evidencia de ingeniería
 
@@ -146,7 +146,8 @@ flowchart LR
 ```
 
 Una auditoría reprobada detiene la promoción aunque todas las pruebas funcionales estén en verde. Ya ocurrió varias veces: el auditor
-encontró casos fuera del camino feliz, la promoción se detuvo, hubo corrección y una nueva auditoría antes de seguir.
+encontró casos fuera del camino feliz, la promoción se detuvo, hubo corrección y una nueva auditoría antes de seguir. Proceso, caso de
+estudio y matriz: [evidencia de ingeniería](docs/evidence-es.md).
 
 ## Seguridad por diseño
 
@@ -160,7 +161,7 @@ Propiedades de diseño, no garantías absolutas:
 - **Revisión independiente:** los cambios de ejecución, aislamiento y recuperación pasan por una auditoría externa de solo lectura antes de promoverse.
 - **Recuperación en capas:** control de versiones (la receta del producto), respaldo cifrado diario fuera del servidor con verificación automática (la caja fuerte fuera de casa) e instantáneas del servidor (la foto de la máquina entera).
 
-Modelo completo (en inglés): [docs/security.md](docs/security.md).
+Modelo completo: [docs/security-es.md](docs/security-es.md).
 
 ## Proveedores de IA
 
@@ -205,7 +206,7 @@ IA se ejecute bajo su propia gobernanza.
 
 - ¿No está de acuerdo con una decisión de arquitectura? [Cuestione la arquitectura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2).
 - ¿Encontró un problema de seguridad? Repórtelo en privado: [SECURITY.md](SECURITY.md).
-- Cómo contribuir: [CONTRIBUTING](CONTRIBUTING.md) · [evaluar la idea en 10 minutos](docs/eval.md).
+- Cómo contribuir: [Cómo participar](CONTRIBUTING-ES.md) · [evaluar la idea en 10 minutos](docs/eval-es.md) · [preguntas frecuentes](docs/faq-es.md).
 
 ## Acerca de
 

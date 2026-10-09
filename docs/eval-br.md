@@ -1,6 +1,6 @@
 # Avalie o OrquestrAI em 10 minutos
 
-🇧🇷 **Português** · 🇺🇸 [English](eval.md) · [README](../README-BR.md)
+🇧🇷 **Português** · 🇺🇸 [English](eval.md) · 🇪🇸 [Español](eval-es.md) · [README](../README-BR.md)
 
 Não é guia de instalação — é um roteiro para engenheiros que querem julgar a ideia e nos dizer onde ela quebra.
 
