@@ -6,7 +6,7 @@
 
 🇺🇸 **English** · 🇧🇷 [Português](README-BR.md) · 🇪🇸 [Español](README-ES.md)
 
-[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Trust boundaries](docs/trust.md) · [Engineering evidence](docs/evidence.md) · [Maturity](#current-maturity) · [Demos](#demos) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Trust boundaries](docs/trust.md) · [Engineering evidence](docs/evidence.md) · [Maturity](#current-maturity) · [Demos](#demos) · [Gallery](docs/gallery.md) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **The engineering layer around AI: agents propose, people decide, the system keeps the evidence.**
 
@@ -33,6 +33,20 @@ approves it — isolated, recorded, and reversible where supported. Each project
 → [proof behind each claim](docs/evidence.md) → [evaluate it in 10 minutes](docs/eval.md).
 
 **Not for:** running untrusted third-party code, fully autonomous "fire and forget" agents, or teams looking for a hosted SaaS today.
+
+## See it
+
+<a href="assets/screenshots/cockpit.png"><img src="assets/screenshots/cockpit.png" width="100%" alt="The cockpit: project-scoped chat, the command block awaiting review, the read-only terminal and the agent mesh with each agent's model, cost and score."></a>
+
+The cockpit: project-scoped chat, the command block awaiting review, the read-only terminal and the agent mesh with each agent's model, cost and score.
+
+<table><tr>
+<td width="33%"><a href="docs/gallery.md#projects"><img src="assets/screenshots/projetos.png" alt="Projects"></a><br><sub>Projects</sub></td>
+<td width="33%"><a href="docs/gallery.md#cast"><img src="assets/screenshots/elenco.png" alt="Agent cast"></a><br><sub>Agent cast</sub></td>
+<td width="33%"><a href="docs/gallery.md#telemetry"><img src="assets/screenshots/telemetria.png" alt="Cost telemetry"></a><br><sub>Cost telemetry</sub></td>
+</tr></table>
+
+All 13 screens, grouped and described: **[gallery](docs/gallery.md)** (real captures of a live deployment, unedited).
 
 ## Why OrquestrAI
 

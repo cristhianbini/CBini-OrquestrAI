@@ -6,7 +6,7 @@
 
 🇪🇸 **Español** · 🇧🇷 [Português](README-BR.md) · 🇺🇸 [English](README.md)
 
-[Por qué](#por-qué-orquestrai) · [Cómo funciona](#cómo-funciona) · [Arquitectura](docs/arch-es.md) · [Decisiones de diseño](docs/design-es.md) · [Seguridad](docs/security-es.md) · [Fronteras de confianza](docs/trust-es.md) · [Evidencia de ingeniería](docs/evidence-es.md) · [Madurez](#madurez-actual) · [Demostraciones](#demostraciones) · [Hoja de ruta](docs/roadmap-es.md) · [Preguntas](docs/faq-es.md) · [Evaluar en 10 minutos](docs/eval-es.md)
+[Por qué](#por-qué-orquestrai) · [Cómo funciona](#cómo-funciona) · [Arquitectura](docs/arch-es.md) · [Decisiones de diseño](docs/design-es.md) · [Seguridad](docs/security-es.md) · [Fronteras de confianza](docs/trust-es.md) · [Evidencia de ingeniería](docs/evidence-es.md) · [Madurez](#madurez-actual) · [Demostraciones](#demostraciones) · [Galería](docs/gallery-es.md) · [Hoja de ruta](docs/roadmap-es.md) · [Preguntas](docs/faq-es.md) · [Evaluar en 10 minutos](docs/eval-es.md)
 
 **La capa de ingeniería alrededor de la IA: los agentes proponen, las personas deciden, el sistema conserva la evidencia.**
 
@@ -34,6 +34,20 @@ sea cual sea el modelo de IA.
 → [la prueba de cada afirmación](docs/evidence-es.md) → [evalúelo en 10 minutos](docs/eval-es.md).
 
 **No es para:** ejecutar código de terceros no confiable, agentes totalmente autónomos del tipo "lanzar y olvidar", ni para quien busca hoy un SaaS alojado.
+
+## Véalo
+
+<a href="assets/screenshots/cockpit.png"><img src="assets/screenshots/cockpit.png" width="100%" alt="El cockpit: chat del proyecto, el bloque de comando a la espera de revisión, la terminal de solo lectura y la malla de agentes con el modelo, costo y puntuación de cada uno."></a>
+
+El cockpit: chat del proyecto, el bloque de comando a la espera de revisión, la terminal de solo lectura y la malla de agentes con el modelo, costo y puntuación de cada uno.
+
+<table><tr>
+<td width="33%"><a href="docs/gallery-es.md#proyectos"><img src="assets/screenshots/projetos.png" alt="Proyectos"></a><br><sub>Proyectos</sub></td>
+<td width="33%"><a href="docs/gallery-es.md#elenco"><img src="assets/screenshots/elenco.png" alt="Elenco de agentes"></a><br><sub>Elenco de agentes</sub></td>
+<td width="33%"><a href="docs/gallery-es.md#telemetría"><img src="assets/screenshots/telemetria.png" alt="Telemetría de costos"></a><br><sub>Telemetría de costos</sub></td>
+</tr></table>
+
+Las 13 pantallas, agrupadas y descritas: **[galería](docs/gallery-es.md)** (capturas reales de una instalación en uso, sin edición).
 
 ## Por qué OrquestrAI
 

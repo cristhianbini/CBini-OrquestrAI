@@ -6,7 +6,7 @@
 
 🇧🇷 **Português** · 🇺🇸 [English](README.md) · 🇪🇸 [Español](README-ES.md)
 
-[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Fronteiras de confiança](docs/trust-br.md) · [Evidência de engenharia](docs/evidence-br.md) · [Maturidade](#maturidade-atual) · [Demonstrações](#demonstrações) · [Roadmap](docs/roadmap-br.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Fronteiras de confiança](docs/trust-br.md) · [Evidência de engenharia](docs/evidence-br.md) · [Maturidade](#maturidade-atual) · [Demonstrações](#demonstrações) · [Galeria](docs/gallery-br.md) · [Roadmap](docs/roadmap-br.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **A camada de engenharia em volta da IA: os agentes propõem, as pessoas decidem, o sistema guarda a evidência.**
 
@@ -33,6 +33,20 @@ pessoa aprova — isolada, registrada e, onde suportado, reversível. Cada proje
 → [a prova de cada afirmação](docs/evidence-br.md) → [avalie em 10 minutos](docs/eval-br.md).
 
 **Não é para:** rodar código de terceiros não confiável, agentes totalmente autônomos do tipo "dispara e esquece", nem para quem procura um SaaS hospedado hoje.
+
+## Veja
+
+<a href="assets/screenshots/cockpit.png"><img src="assets/screenshots/cockpit.png" width="100%" alt="O cockpit: chat do projeto, o bloco de comando aguardando revisão, o terminal somente leitura e a malha de agentes com modelo, custo e score de cada um."></a>
+
+O cockpit: chat do projeto, o bloco de comando aguardando revisão, o terminal somente leitura e a malha de agentes com modelo, custo e score de cada um.
+
+<table><tr>
+<td width="33%"><a href="docs/gallery-br.md#projetos"><img src="assets/screenshots/projetos.png" alt="Projetos"></a><br><sub>Projetos</sub></td>
+<td width="33%"><a href="docs/gallery-br.md#elenco"><img src="assets/screenshots/elenco.png" alt="Elenco de agentes"></a><br><sub>Elenco de agentes</sub></td>
+<td width="33%"><a href="docs/gallery-br.md#telemetria"><img src="assets/screenshots/telemetria.png" alt="Telemetria de custo"></a><br><sub>Telemetria de custo</sub></td>
+</tr></table>
+
+As 13 telas, agrupadas e descritas: **[galeria](docs/gallery-br.md)** (capturas reais de uma instalação em uso, sem edição).
 
 ## Por que o OrquestrAI
 
