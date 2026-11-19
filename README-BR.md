@@ -6,7 +6,7 @@
 
 🇧🇷 **Português** · 🇺🇸 [English](README.md) · 🇪🇸 [Español](README-ES.md)
 
-[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Fronteiras de confiança](docs/trust-br.md) · [Evidência de engenharia](docs/evidence-br.md) · [Maturidade](#maturidade-atual) · [Demonstrações](#demonstrações) · [Galeria](docs/gallery-br.md) · [Roadmap](docs/roadmap-br.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Por quê](#por-que-o-orquestrai) · [Como funciona](#como-funciona) · [Arquitetura](docs/arch-br.md) · [Decisões de projeto](docs/design-br.md) · [Segurança](docs/security-br.md) · [Fronteiras de confiança](docs/trust-br.md) · [Evidência de engenharia](docs/evidence-br.md) · [Maturidade](#maturidade-atual) · [Demonstrações](#demonstrações) · [Galeria](docs/gallery-br.md) · [Roadmap](docs/roadmap-br.md) · [Changelog](CHANGELOG-BR.md) · [Perguntas](docs/faq-br.md) · [Avalie em 10 minutos](docs/eval-br.md) · [Questione a arquitetura](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **A camada de engenharia em volta da IA: os agentes propõem, as pessoas decidem, o sistema guarda a evidência.**
 

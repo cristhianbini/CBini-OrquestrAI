@@ -6,7 +6,7 @@
 
 🇺🇸 **English** · 🇧🇷 [Português](README-BR.md) · 🇪🇸 [Español](README-ES.md)
 
-[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Trust boundaries](docs/trust.md) · [Engineering evidence](docs/evidence.md) · [Maturity](#current-maturity) · [Demos](#demos) · [Gallery](docs/gallery.md) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
+[Why](#why-orquestrai) · [How it works](#how-it-works) · [Architecture](docs/arch.md) · [Design decisions](docs/design.md) · [Security](docs/security.md) · [Trust boundaries](docs/trust.md) · [Engineering evidence](docs/evidence.md) · [Maturity](#current-maturity) · [Demos](#demos) · [Gallery](docs/gallery.md) · [Roadmap](docs/roadmap.md) · [Changelog](CHANGELOG.md) · [FAQ](docs/faq.md) · [Evaluate in 10 minutes](docs/eval.md) · [Challenge the architecture](https://github.com/cristhianbini/CBini-OrquestrAI/discussions/2)
 
 **The engineering layer around AI: agents propose, people decide, the system keeps the evidence.**
 

@@ -6,7 +6,7 @@
 
 🇪🇸 **Español** · 🇧🇷 [Português](README-BR.md) · 🇺🇸 [English](README.md)
 
-[Por qué](#por-qué-orquestrai) · [Cómo funciona](#cómo-funciona) · [Arquitectura](docs/arch-es.md) · [Decisiones de diseño](docs/design-es.md) · [Seguridad](docs/security-es.md) · [Fronteras de confianza](docs/trust-es.md) · [Evidencia de ingeniería](docs/evidence-es.md) · [Madurez](#madurez-actual) · [Demostraciones](#demostraciones) · [Galería](docs/gallery-es.md) · [Hoja de ruta](docs/roadmap-es.md) · [Preguntas](docs/faq-es.md) · [Evaluar en 10 minutos](docs/eval-es.md)
+[Por qué](#por-qué-orquestrai) · [Cómo funciona](#cómo-funciona) · [Arquitectura](docs/arch-es.md) · [Decisiones de diseño](docs/design-es.md) · [Seguridad](docs/security-es.md) · [Fronteras de confianza](docs/trust-es.md) · [Evidencia de ingeniería](docs/evidence-es.md) · [Madurez](#madurez-actual) · [Demostraciones](#demostraciones) · [Galería](docs/gallery-es.md) · [Hoja de ruta](docs/roadmap-es.md) · [Changelog](CHANGELOG-ES.md) · [Preguntas](docs/faq-es.md) · [Evaluar en 10 minutos](docs/eval-es.md)
 
 **La capa de ingeniería alrededor de la IA: los agentes proponen, las personas deciden, el sistema conserva la evidencia.**
 
