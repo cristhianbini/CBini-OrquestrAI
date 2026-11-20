@@ -16,6 +16,19 @@ ainda não é funcionalidade. Datas no formato AAAA-MM-DD.
 
 ---
 
+## 0.45.1 — 2026-11-20 · Publicada
+
+Acabamento depois do MVP: as interfaces aprovadas pelo fundador e uma correção para instalações novas. A autenticação não mudou.
+
+**Entregue**
+- **Projetos: filtro e busca.** Todos, Clientes e Testes, com busca por nome (ignora acento e hífen) e a contagem "N de M". Só leitura.
+- **Provedores: um cartão por provedor.** Faixa de cor sutil; **Conexão** (último teste ou última chamada atendida, o mais recente, com data) e **Saldo** (consultado, inferido por recusa ou "não informado pelo provedor"). A lista detalhada continua abaixo.
+- **Login:** barra fina com o link para este changelog; o slogan "A IA acelera. O humano decide." se escreve e se apaga em loop, e fica fixo para quem reduz o movimento no sistema.
+
+**Corrigido**
+- Instalação sem chave do OpenRouter: o nível Econômico não aparece mais como disponível antes de a chave ser cadastrada; o cartão diz o que fazer.
+- Instalador: uma instalação nova passa a levar o verificador funcional das construções. A instalação limpa numa VPS ainda não foi comprovada.
+
 ## 0.45.0 — 2026-11-20 · MVP · Publicada
 
 É a primeira versão pensada como produto mínimo completo. Foi lançada depois que três construções reais passaram na verificação

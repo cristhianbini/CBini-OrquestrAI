@@ -2,13 +2,20 @@
 
 🇺🇸 **English** · 🇧🇷 [Português](gallery-br.md) · 🇪🇸 [Español](gallery-es.md) · [README](../README.md) · [Glossary](glossary.md) · [Architecture](arch.md)
 
-Real captures of a live deployment (October 2026, version 0.42), unedited. The interface is in Portuguese. Numbers, states and
+Real captures of a live deployment (October 2026, version 0.42; sign-in, projects and providers updated in November 2026, version 0.45.1), unedited. The interface is in Portuguese. Numbers, states and
 warnings are shown as they were — including things that are still being worked on. Click any image to open it at full size.
 
 - [Cockpit and operation](#cockpit-and-operation) · [Agents and orchestration](#agents-and-orchestration) ·
   [Governance and knowledge](#governance-and-knowledge) · [Providers and costs](#providers-and-costs)
 
 ## Cockpit and operation
+
+### Sign-in
+<a href="../assets/screenshots/login.png"><img src="../assets/screenshots/login.png" width="100%" alt="Sign-in screen: a thin bar with the Changelog link, the OrquestrAI mark and name with the tagline, the four-step access protocol, and the email and password form with the Cloudflare check"></a>
+
+The sign-in screen shows the four-step access protocol (read credentials, assess the session, verify 2FA, grant access) and the form
+with the anti-bot check. The tagline "A IA acelera. O humano decide." (AI accelerates. Humans decide.) types and erases in a loop; for
+people who reduce motion, it stays still, as in this capture (November 2026, version 0.45.1).
 
 ### Cockpit
 <a href="../assets/screenshots/cockpit.png"><img src="../assets/screenshots/cockpit.png" width="100%" alt="OrquestrAI cockpit with no project selected: chat with the active model on the left, command block and read-only terminal in the centre, agent mesh with model, role, runs, cost and score per agent on the right"></a>
@@ -21,8 +28,9 @@ average cost and score.
 <a href="../assets/screenshots/projetos.png"><img src="../assets/screenshots/projetos.png" width="100%" alt="Projects window: new project and GitHub import, and project cards with stack, database, state, cost, deploy mode and creation date"></a>
 
 Each project card shows stack, database, state, accumulated cost, deploy mode and creation date, with preview, plans, DNA (the
-project's identity) and objectives. New projects start in a guided wizard; GitHub import goes through an audited clone. Cards show the
-real state of each project, including one stopped while a command block was being validated.
+project's identity) and objectives. New projects start in a guided wizard; GitHub import goes through an audited clone. Since 0.45.1 the list has All, Clients and Tests
+filters and a name search; in this capture (November 2026) the Tests filter shows only the proof projects. Cards show the real state of
+each project, including interrupted builds.
 
 ### State
 <a href="../assets/screenshots/estado.png"><img src="../assets/screenshots/estado.png" width="100%" alt="State panel: server CPU, memory and disk, backup age, checks, roadmap score and pending operator decisions"></a>
@@ -76,8 +84,10 @@ when there is none, the screen says so.
 ### Providers
 <a href="../assets/screenshots/provedores.png"><img src="../assets/screenshots/provedores.png" width="100%" alt="Providers panel: balance per provider where available, and per provider the connection state, key configured, default model, latency and last check"></a>
 
-Per provider: connection state, default model, latency and last check. Balance is shown where the provider reports it through its API;
-elsewhere it is inferred from refusals and labeled as inferred. Keys are never displayed — only whether one is configured.
+Since 0.45.1, one card per provider (November 2026): **connection** (latest test or latest served call, with the date) and **balance**.
+Balance is shown where the provider reports it through its API; elsewhere it is inferred from refusals and labeled as inferred, or shows
+"not reported by the provider". Below, the detailed list: state, test model, latency and last check. Keys are never displayed — only
+whether one is configured.
 
 ### Telemetry
 <a href="../assets/screenshots/telemetria.png"><img src="../assets/screenshots/telemetria.png" width="100%" alt="Telemetry: calls, measured cost, tokens and failures for 30 days and all time, and calls split by price class"></a>

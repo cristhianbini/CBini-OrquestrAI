@@ -2,13 +2,20 @@
 
 🇧🇷 **Português** · 🇺🇸 [English](gallery.md) · 🇪🇸 [Español](gallery-es.md) · [README](../README-BR.md) · [Glossário](glossary-br.md) · [Arquitetura](arch-br.md)
 
-Capturas reais de uma instalação em uso (outubro de 2026, versão 0.42), sem edição. Números, estados e avisos aparecem como estavam —
+Capturas reais de uma instalação em uso (outubro de 2026, versão 0.42; acesso, projetos e provedores atualizados em novembro de 2026, versão 0.45.1), sem edição. Números, estados e avisos aparecem como estavam —
 inclusive o que ainda está sendo trabalhado. Clique numa imagem para abri-la em tamanho real.
 
 - [Cockpit e operação](#cockpit-e-operação) · [Agentes e orquestração](#agentes-e-orquestração) ·
   [Governança e conhecimento](#governança-e-conhecimento) · [Provedores e custos](#provedores-e-custos)
 
 ## Cockpit e operação
+
+### Acesso
+<a href="../assets/screenshots/login.png"><img src="../assets/screenshots/login.png" width="100%" alt="Tela de acesso: barra fina com o link para o Changelog, símbolo e nome OrquestrAI com o slogan, protocolo de acesso em quatro etapas e o formulário de e-mail e senha com a verificação da Cloudflare"></a>
+
+A entrada mostra o protocolo de acesso em quatro etapas (ler credenciais, avaliar a sessão, verificar o 2FA, executar o acesso) e o
+formulário com a verificação anti-robô. O slogan "A IA acelera. O humano decide." se escreve e se apaga em loop; para quem reduz o
+movimento no sistema, ele fica fixo, como nesta captura (novembro de 2026, versão 0.45.1).
 
 ### Cockpit
 <a href="../assets/screenshots/cockpit.png"><img src="../assets/screenshots/cockpit.png" width="100%" alt="Cockpit do OrquestrAI sem projeto escolhido: chat com o modelo ativo à esquerda, bloco de comando e terminal somente leitura no centro, malha de agentes com modelo, função, execuções, custo e score à direita"></a>
@@ -21,8 +28,9 @@ função, execuções, custo médio e score de cada um.
 <a href="../assets/screenshots/projetos.png"><img src="../assets/screenshots/projetos.png" width="100%" alt="Janela de projetos: novo projeto e importação do GitHub, e cards de projeto com stack, banco, estado, custo, modo de deploy e data de criação"></a>
 
 Cada card mostra stack, banco, estado, custo acumulado, modo de deploy e data de criação, com preview, planos, DNA (a identidade do
-projeto) e objetivos. Projetos novos começam num assistente guiado; a importação do GitHub passa por um clone auditado. Os cards mostram
-o estado real de cada projeto, inclusive um parado enquanto um bloco era validado.
+projeto) e objetivos. Projetos novos começam num assistente guiado; a importação do GitHub passa por um clone auditado. Desde a 0.45.1, a lista tem os
+filtros Todos, Clientes e Testes e uma busca por nome; nesta captura (novembro de 2026), o filtro Testes mostra só os projetos de prova.
+Os cards mostram o estado real de cada projeto, inclusive construções interrompidas.
 
 ### Estado
 <a href="../assets/screenshots/estado.png"><img src="../assets/screenshots/estado.png" width="100%" alt="Painel de estado: CPU, memória e disco do servidor, idade do backup, checks, placar do roadmap e decisões pendentes do operador"></a>
@@ -76,8 +84,10 @@ quando não existe, a tela diz isso.
 ### Provedores
 <a href="../assets/screenshots/provedores.png"><img src="../assets/screenshots/provedores.png" width="100%" alt="Painel de provedores: saldo por provedor quando disponível e, para cada provedor, estado da conexão, chave configurada, modelo padrão, latência e última verificação"></a>
 
-Por provedor: estado da conexão, modelo padrão, latência e última verificação. O saldo aparece quando o provedor o informa pela API;
-nos demais, é inferido das recusas e rotulado como inferido. As chaves nunca são exibidas — só se há uma configurada.
+Desde a 0.45.1, um cartão por provedor (novembro de 2026): **conexão** (último teste ou última chamada atendida, com a data) e
+**saldo**. O saldo aparece quando o provedor o informa pela API; nos demais, é inferido das recusas e rotulado como inferido, ou aparece
+"não informado pelo provedor". Abaixo, a lista detalhada: estado, modelo do teste, latência e última verificação. As chaves nunca são
+exibidas — só se há uma configurada.
 
 ### Telemetria
 <a href="../assets/screenshots/telemetria.png"><img src="../assets/screenshots/telemetria.png" width="100%" alt="Telemetria: chamadas, custo medido, tokens e falhas em 30 dias e desde o início, e chamadas por classe de preço"></a>

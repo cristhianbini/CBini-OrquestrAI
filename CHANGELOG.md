@@ -16,6 +16,19 @@ feature yet. Dates are in the format YYYY-MM-DD.
 
 ---
 
+## 0.45.1 — 2026-11-20 · Released
+
+Polish after the MVP: the screens approved by the founder and a fix for new installations. Authentication did not change.
+
+**Delivered**
+- **Projects: filter and search.** All, Clients and Tests, with name search (accents and hyphens ignored) and an "N of M" count. Read-only.
+- **Providers: one card per provider.** A subtle color strip; **Connection** (latest test or latest served call, whichever is newer, with the date) and **Balance** (queried, inferred from a refusal, or "not reported by the provider"). The detailed list stays below.
+- **Login:** a thin bar with a link to this changelog; the tagline "A IA acelera. O humano decide." (AI accelerates. Humans decide.) types, pauses and erases in a loop, and stays still for people who reduce motion.
+
+**Fixed**
+- Installation without an OpenRouter key: the Economy level no longer shows as available before the key is added; the card says what to do.
+- Installer: a new installation now includes the functional checker for builds. A clean install on a fresh server has not been proven yet.
+
 ## 0.45.0 — 2026-11-20 · MVP · Released
 
 This is the first version meant as a complete minimum product. It was released after three real builds passed the functional
