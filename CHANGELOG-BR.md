@@ -16,12 +16,13 @@ ainda não é funcionalidade. Datas no formato AAAA-MM-DD.
 
 ---
 
-## 0.45.0 — MVP · Em preparação
+## 0.45.0 — 2026-11-20 · MVP · Publicada
 
-É a primeira versão pensada como produto mínimo completo. Ela só será lançada quando três construções reais passarem numa verificação
-funcional pelo cockpit em produção, todas com modelos de IA gratuitos e custo zero. As três construções são um simulador de empréstimo, um
-painel de dados e um site institucional. Tudo o que está listado abaixo já está no ar. O lançamento espera essas verificações e a decisão do
-fundador.
+É a primeira versão pensada como produto mínimo completo. Foi lançada depois que três construções reais passaram na verificação
+funcional pelo cockpit em produção: um site institucional, um simulador de empréstimo e um painel de dados. O site e o simulador foram
+construídos com modelos de IA gratuitos, a custo zero. O painel de dados foi construído no nível Inteligente, com um modelo pago econômico
+autorizado pelo fundador, com custo máximo aceito antes de começar. Painéis complexos ficam mais estáveis no nível Inteligente; o nível
+Econômico continua sendo a melhor tentativa gratuita.
 
 **Entregue**
 - **Telemetria restaurada e aprovada pelo fundador.** Mostra os últimos 30 dias e o histórico completo: investimento, tokens e economia
@@ -39,6 +40,16 @@ fundador.
   aquela parte ser corrigida.
 - **Menu que alcança todas as seções.** Em sites de uma página, o menu passa a listar as seções que existem. Um link que apontava para a
   própria página agora leva o visitante à primeira seção.
+- **Indicadores sobre a coluna numérica certa.** Os KPIs de um painel gerado usam uma coluna numérica escolhida pela plataforma, nunca a
+  coluna do filtro.
+- **Menu que cabe no celular.** O menu de sites de uma página quebra linha em telas pequenas, sem rolagem lateral.
+- **Fábrica gratuita mais resistente.** Uma recusa por limite de uso do provedor não esgota mais as tentativas entre modelos gratuitos, e
+  o motivo de cada troca fica registrado.
+- **Formulário de contato demonstrativo que responde.** O botão envia e a página mostra o aviso de que nada é enviado de verdade.
+- **Nível Inteligente que completa painéis.** O custo máximo de um site pago cobre a geração em partes, e o raciocínio interno do modelo
+  pago fica limitado para o código caber na resposta.
+- **Painéis gerados sem travar e sem recusa por engano.** Um componente da plataforma não entra mais em laço quando o painel se redesenha,
+  e a verificação reconhece mais formas legítimas de usar os componentes.
 - **Liberação pelo operador.** Cada atualização do sistema em produção exige uma liberação digitada pelo operador. A liberação fica presa
   aos arquivos exatos que foram conferidos.
 

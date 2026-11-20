@@ -16,11 +16,13 @@ feature yet. Dates are in the format YYYY-MM-DD.
 
 ---
 
-## 0.45.0 — MVP · In preparation
+## 0.45.0 — 2026-11-20 · MVP · Released
 
-This is the first version meant as a complete minimum product. It will be released only when three real builds pass a functional check
-through the live cockpit, all on free AI models at zero cost. The three builds are a loan simulator, a data dashboard and a business
-website. Everything listed below is already live. The release itself is waiting for those checks and for the founder's decision.
+This is the first version meant as a complete minimum product. It was released after three real builds passed the functional
+check through the live cockpit: a business website, a loan simulator and a data dashboard. The website and the simulator were built
+with free AI models at zero cost. The dashboard was built at the Smart level, with a low-cost paid model approved by the founder and a
+maximum cost accepted before the build started. Complex dashboards are more reliable at the Smart level; the Economy level remains the
+best free attempt.
 
 **Delivered**
 - **Telemetry restored and approved by the founder.** It shows the last 30 days and the full history: investment, tokens and estimated
@@ -38,6 +40,16 @@ website. Everything listed below is already live. The release itself is waiting 
   sends that part back to be fixed.
 - **Navigation that reaches every section.** On one-page websites, the menu now lists the sections that exist. A link that pointed to
   the page itself now takes the visitor to the first section.
+- **KPIs on the right numeric column.** Indicators in a generated dashboard use a numeric column chosen by the platform, never the
+  filter column.
+- **Navigation that fits on a phone.** One-page website menus wrap on small screens, with no sideways scrolling.
+- **More resilient free Factory.** A provider rate-limit refusal no longer uses up the attempts across free models, and the reason for
+  each switch is recorded.
+- **Demo contact form that responds.** The button submits and the page shows the notice that nothing is actually sent.
+- **Smart level that completes dashboards.** The maximum cost of a paid site covers the build in parts, and the paid model's internal
+  reasoning is capped so the code fits in the response.
+- **Generated dashboards that don't freeze or get rejected by mistake.** A platform component no longer loops when the dashboard
+  redraws, and the check recognizes more legitimate ways of using the components.
 - **Release sign-off by the operator.** Every update to the live system needs a sign-off typed by the operator. The sign-off is tied to
   the exact files that were checked.
 

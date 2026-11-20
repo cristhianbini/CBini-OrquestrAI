@@ -17,12 +17,13 @@ todavía no es una funcionalidad. Fechas en formato AAAA-MM-DD.
 
 ---
 
-## 0.45.0 — MVP · En preparación
+## 0.45.0 — 2026-11-20 · MVP · Publicada
 
-Es la primera versión pensada como producto mínimo completo. Solo se lanzará cuando tres construcciones reales superen una verificación
-funcional a través del cockpit en producción, todas con modelos de IA gratuitos y costo cero. Las tres construcciones son un simulador de
-préstamos, un panel de datos y un sitio institucional. Todo lo que aparece abajo ya está en producción. El lanzamiento espera esas
-verificaciones y la decisión del fundador.
+Es la primera versión pensada como producto mínimo completo. Se lanzó después de que tres construcciones reales superaran la
+verificación funcional a través del cockpit en producción: un sitio institucional, un simulador de préstamos y un panel de datos. El
+sitio y el simulador se construyeron con modelos de IA gratuitos, a costo cero. El panel de datos se construyó en el nivel Inteligente,
+con un modelo de pago económico autorizado por el fundador y un costo máximo aceptado antes de empezar. Los paneles complejos son más
+estables en el nivel Inteligente; el nivel Económico sigue siendo el mejor intento gratuito.
 
 **Entregado**
 - **Telemetría restaurada y aprobada por el fundador.** Muestra los últimos 30 días y el historial completo: inversión, tokens y ahorro
@@ -41,6 +42,16 @@ verificaciones y la decisión del fundador.
   componente, la Fábrica devuelve esa parte para corregirla.
 - **Menú que llega a todas las secciones.** En sitios de una sola página, el menú ahora lista las secciones que existen. Un enlace que
   apuntaba a la propia página ahora lleva al visitante a la primera sección.
+- **Indicadores sobre la columna numérica correcta.** Los KPI de un panel generado usan una columna numérica elegida por la
+  plataforma, nunca la columna del filtro.
+- **Menú que cabe en el móvil.** El menú de los sitios de una sola página salta de línea en pantallas pequeñas, sin desplazamiento lateral.
+- **Fábrica gratuita más resistente.** Un rechazo por límite de uso del proveedor ya no agota los intentos entre modelos gratuitos, y el
+  motivo de cada cambio queda registrado.
+- **Formulario de contacto de demostración que responde.** El botón envía y la página muestra el aviso de que nada se envía de verdad.
+- **Nivel Inteligente que completa paneles.** El costo máximo de un sitio de pago cubre la generación por partes, y el razonamiento interno
+  del modelo de pago queda limitado para que el código quepa en la respuesta.
+- **Paneles generados que no se bloquean ni se rechazan por error.** Un componente de la plataforma ya no entra en bucle al redibujar el
+  panel, y la verificación reconoce más formas legítimas de usar los componentes.
 - **Liberación por el operador.** Cada actualización del sistema en producción exige una liberación escrita por el operador. La liberación
   queda ligada a los archivos exactos que se verificaron.
 
